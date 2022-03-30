@@ -94,15 +94,19 @@ const SocialMediaContainer = styled.div`
   border: 1px solid #ffffff;
 
   @media (min-width: 1024px) {
-    margin: 0 100px;
+    margin: 0 12%;
   }
 `;
 
 const ContactContainer = styled.div`
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: 1024px) {
+    width: 50%;
+  }
 `;
 
 const SocialMediaAnchor = styled.a`
