@@ -101,6 +101,10 @@ const NavBarDiv = styled.div`
   align-items: center;
   z-index: 100;
   margin: 0 20px;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
 `;
 
 const Anchor = styled.p`

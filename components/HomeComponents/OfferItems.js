@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const Container = styled.div`
   transition: all 0.2s ease-out;
-  width: 100%;
+  width: 80%;
   height: 350px;
   margin: 20px 0;
   border: 1px solid #ffffff;
@@ -62,11 +62,11 @@ const OfferItems = ({ items }) => {
     <>
       {items.map((item) => {
         return (
-          <Container kay={item.id}>
+          <Container key={item.id}>
             <Subject>{item.title}</Subject>
             <TextContainer>
-              {item.description.map((desc) => {
-                return <Paragraph>{desc}</Paragraph>;
+              {item.description.map((desc, index) => {
+                return <Paragraph key={index}>{desc}</Paragraph>;
               })}
             </TextContainer>
           </Container>
