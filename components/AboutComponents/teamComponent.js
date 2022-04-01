@@ -12,7 +12,7 @@ margin: 40px 20px;
 font-size: 25px;
 `;
 
-const TeamComponent = ({ items }) => {
+const TeamComponent = () => {
     return (
         <Container>
             <Subject>poznaj nas</Subject>
