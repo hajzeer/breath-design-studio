@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Image from "next/image";
 import { MoveOne } from "../utils/animations";
 import { CustomerPOV } from "../data/offer";
-import TeamList from "../components/AboutComponents/teamList";
+import TeamComponent from "../components/AboutComponents/teamComponent";
 
 const Container = styled.div`
   width: 100%;
@@ -193,7 +193,7 @@ const About = () => {
             }
           </ListContainer>
         </div>
-        <TeamList />
+        <TeamComponent />
       </Container>
     </Layout>
   );

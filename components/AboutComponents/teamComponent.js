@@ -12,7 +12,7 @@ margin: 40px 20px;
 font-size: 25px;
 `;
 
-const TeamList = ({ items }) => {
+const TeamComponent = ({ items }) => {
     return (
         <Container>
             <Subject>poznaj nas</Subject>
@@ -21,4 +21,4 @@ const TeamList = ({ items }) => {
 }
 
 
-export default TeamList
+export default TeamComponent
