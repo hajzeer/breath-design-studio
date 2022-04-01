@@ -107,7 +107,8 @@ const WelcomeComponents = () => {
             <span> identyfikacja wizualna</span> Każda marka ma do opowiedzenia
             historię. Niezależnie czy jest to historia doświadczenia na rynku,
             wyjątkowości oferowanych produktów lub usług. <br />
-            Jaka jest Twoja historia? <span> CHĘTNIE JĄ ZIDENTYFIKUJEMY.</span>
+            Jaka jest Twoja historia?
+            <br /> <span> CHĘTNIE JĄ ZIDENTYFIKUJEMY.</span>
           </Paragraph>
         </TextContainer>
       </InnerContainer>

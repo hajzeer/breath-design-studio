@@ -60,7 +60,7 @@ export const data = {
     },
     {
       id: 5,
-      title: "animacje",
+      title: "PROJEKTY DRUKOWANE",
       description: [
         "Broszury /magazyny / ulotki",
         "Zaproszenia / vouchery",
@@ -71,3 +71,6 @@ export const data = {
     },
   ],
 };
+
+
+export const CustomerPOV = ['logo', 'kolorystyka', 'krój pisma', 'druki firmowe', 'księga znaku', 'opakowania produktów', 'social media', 'uniformy']

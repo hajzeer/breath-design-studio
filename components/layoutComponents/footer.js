@@ -140,7 +140,9 @@ const Footer = () => {
         <Image src='/GRADIENTS/7.png' width='2000' height='2000' />
       </ImageDiv>
       <TextContainer>
-        <Subject>SKONTAKTUJ SIĘ Z NAMI</Subject>
+        <Subject>
+          SKONTAKTUJ SIĘ <br /> Z NAMI
+        </Subject>
         <Paragraph>Pomagamy małym i dużym firmom.</Paragraph>
       </TextContainer>
       <ContentContainer>

@@ -17,11 +17,6 @@ const Container = styled.div`
   &:hover {
     background: #ffffff;
     color: #000000;
-  }
-
-  &:hover {
-    background: #ffffff;
-    color: #000000;
 
     p {
       font-weight: 700;
@@ -42,9 +37,6 @@ const Subject = styled.h2`
   text-transform: uppercase;
   letter-spacing: 2px;
   justify-self: flex-start;
-
-  width: 100%;
-  height: 20%;
 `;
 const Paragraph = styled.p`
   margin: 20px;

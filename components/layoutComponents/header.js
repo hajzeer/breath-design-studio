@@ -3,6 +3,7 @@
 import { useState } from "react";
 import styled from "styled-components";
 import Image from "next/image";
+import Link from "next/link";
 
 const Container = styled.header`
   width: 100%;
@@ -126,9 +127,16 @@ const Header = () => {
   return (
     <Container>
       <BluredDiv />
-      <ImageContainer>
-        <Image src='/logo/8.png' width='300' height='300' layout='responsive' />
-      </ImageContainer>
+      <Link href='/'>
+        <ImageContainer>
+          <Image
+            src='/logo/8.png'
+            width='300'
+            height='300'
+            layout='responsive'
+          />
+        </ImageContainer>
+      </Link>
       <HamburderContainer onClick={() => setIsActive(!isActive)}>
         <HamburgerSpan active={isActive} />
       </HamburderContainer>
