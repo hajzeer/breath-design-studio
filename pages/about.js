@@ -187,8 +187,8 @@ const About = () => {
           </TextContainer>
           <ListContainer>
             {
-              CustomerPOV.map(item => {
-                return (<ListParagraph>{item}</ListParagraph>)
+              CustomerPOV.map(item, index => {
+                return (<ListParagraph key={index}>{item}</ListParagraph>)
               })
             }
           </ListContainer>
