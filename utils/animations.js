@@ -8,14 +8,14 @@ export const MoveOne = keyframes`
 }
 
 25% {
-    transform: translateY(10px) translateX(5px);
+    transform: translateY(15px) translateX(10px);
 }
 50% {
-    transform: translateY(15px) translateX(10px);
+    transform: translateY(30px) translateX(20px);
 }
 
 75% {
-    transform: translateY(10px) translateX(5px);
+    transform: translateY(15px) translateX(10px);
 }
 
 100% {
@@ -30,14 +30,14 @@ export const MoveTwo = keyframes`
 }
 
 25% {
-    transform: translateY(-15px) ;
+    transform: translateY(-20px) ;
 }
 50% {
-    transform: translateX(20px);
+    transform: translateX(30px);
 }
 
 75% {
-    transform: translateY(-10px) ;
+    transform: translateY(-20px) ;
 }
 
 100% {

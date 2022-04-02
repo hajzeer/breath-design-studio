@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import TeamList from "../AboutComponents/teamList";
+import {People} from '../../data/offer'
 
 const Container = styled.div`
 width: 100%;
@@ -16,6 +18,7 @@ const TeamComponent = () => {
     return (
         <Container>
             <Subject>poznaj nas</Subject>
+            <TeamList items={People}/>
         </Container>
     )
 }

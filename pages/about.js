@@ -78,7 +78,7 @@ const ImageDivFirst = styled.div`
   left: -100px;
   top: 450px;
   z-index: -1;
-  animation: ${MoveOne} 4s linear infinite;
+  animation: ${MoveOne} 6s linear infinite;
 
   @media (min-width: 1024px) {
     width: 2000px;
@@ -137,7 +137,54 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+`;
+
+const FinishDiv = styled.div`
+width: 100%;
+height: auto;
+position: relative;
+
+&::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    top: -25px;
+    background: #ffffff;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    right: 0;
+    bottom: -25px;
+    background: #ffffff;
+  }
+
 `
+
+const FirstFinishParagraph = styled.p`
+
+text-transform: uppercase;
+color: #ffffff;
+font-weight: 500;
+margin: 20px;
+font-size: 25px;
+
+`;
+
+const SecondFinishParagraph = styled.p`
+
+color: #ffffff;
+font-weight: 500;
+margin: 20px;
+font-size: 20px;
+
+
+`;
 
 const About = () => {
   return (
@@ -157,7 +204,7 @@ const About = () => {
             <span> Wszystko po to, by wyróżnić Twoją markę na tle innych.</span>
           </Paragraph>
         </InnerContainer>
-        <ButtonStyled>Niezobowiązująca wycena twojego projektu</ButtonStyled>
+        <ButtonStyled>Niezobowiązująca wycena<br/> twojego projektu</ButtonStyled>
         <ImageDivFirst>
           <Image src='/GRADIENTS/1.png' width='2000' height='2000' />
         </ImageDivFirst>
@@ -194,6 +241,16 @@ const About = () => {
           </ListContainer>
         </div>
         <TeamComponent />
+        <FinishDiv>
+          <FirstFinishParagraph>
+            NASZĄ SPECJALIZACJĄ JEST KOMPLEKSOWA I PROFESJONALNA OBSŁUGA 
+            TWOJEJ FIRMY.
+          </FirstFinishParagraph>
+          <SecondFinishParagraph>
+            Naszą siłą jest zespół. Wspólnymi siłami dokładamy wszelkich starań, 
+            aby pomóc Twojej firmie rozwinąć skrzydła na wielu płaszczyznach.
+          </SecondFinishParagraph>
+        </FinishDiv>
       </Container>
     </Layout>
   );

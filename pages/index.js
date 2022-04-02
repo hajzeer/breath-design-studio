@@ -135,7 +135,7 @@ const ImageDivSecond = styled.div`
   left: 15px;
 
   z-index: -1;
-  animation: ${MoveTwo} 4s linear infinite;
+  animation: ${MoveTwo} 6s linear infinite;
 
   @media (min-width: 1024px) {
     width: 550px;

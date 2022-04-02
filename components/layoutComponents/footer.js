@@ -123,7 +123,7 @@ const ImageDiv = styled.div`
   left: -150px;
   z-index: -1;
 
-  animation: ${MoveOne} 4s linear infinite;
+  animation: ${MoveOne} 6s linear infinite;
 
   @media (min-width: 1024px) {
     width: 1000px;

@@ -60,7 +60,7 @@ const ImageDivFirst = styled.div`
   height: 900px;
   left: -100px;
   z-index: -1;
-  animation: ${MoveOne} 4s linear infinite;
+  animation: ${MoveOne} 6s linear infinite;
 
   @media (min-width: 1024px) {
     width: 2000px;
@@ -77,7 +77,7 @@ const ImageDivSecond = styled.div`
   top: 320px;
   right: 0;
   z-index: -1;
-  animation: ${MoveTwo} 4s linear infinite;
+  animation: ${MoveTwo} 6s linear infinite;
 
   @media (min-width: 1024px) {
     width: 1200px;
