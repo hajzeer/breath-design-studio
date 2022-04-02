@@ -57,7 +57,7 @@ const TeamList = ({ items }) => {
             {
                 items.map(item => {
                     return (
-                        <Container>
+                        <Container key={item.id}>
                             <ImageDiv>
                                 <Image src={item.image} width={500} height={500}/>
                             </ImageDiv>
