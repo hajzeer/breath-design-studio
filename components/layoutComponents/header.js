@@ -158,7 +158,7 @@ const Header = () => {
         <Link href="/about">
           <Anchor>O Nas</Anchor>
         </Link>
-        <Link href="/">
+        <Link href="/portfolio">
           <Anchor>Portfolio</Anchor>
         </Link>
         <Link href="/">

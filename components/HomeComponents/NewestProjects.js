@@ -9,7 +9,6 @@ const Container = styled.div`
   height: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
 
   position: relative;
 
@@ -63,7 +62,7 @@ const Subject = styled.h2`
     width: 80%;
     font-size: 70px;
     font-weight: 700;
-    margin: 50px 40px;
+    margin: 50px 80px;
   }
 `;
 

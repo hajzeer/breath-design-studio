@@ -46,7 +46,7 @@ const navBar = ({ open, unActive }) => {
         <Link href="/about">
           <Anchor onClick={unActive}>O Nas</Anchor>
         </Link>
-        <Link href="/">
+        <Link href="/portfolio">
           <Anchor onClick={unActive}>Portfolio</Anchor>
         </Link>
         <Link href="/">

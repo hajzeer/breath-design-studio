@@ -116,12 +116,10 @@ export const People = [
     id: 2,
     name: 'aneta nowak',
     title: 'GRAPHIC DESIGNER',
-    description: `Specjalizuję się głównie w grafice
-    wektorowej - robię logotypy,
-    ilustracje, a także projekty
-    wizytówek, voucherów, plakatów.
-    Zajmuję się również digital
-    paintingiem.`,
+    description: `Hej!
+    Jestem studentką grafiki komputerowej. W tym momencie specjalizuję się głównie w grafice wektorowej - robię logotypy, ilustracje jak i wszelakie wizytówki, vouchery, plakaty. Zajmuję się również digital paintingiem. Od dziecka lubię tworzyć.
+    Cały czas pracuję nad swoimi umiejętnościami i chcę się rozwijać w różnych dziedzinach związanych ze sztuką!
+    `,
     image: '/zdj/16.png',
     active: true,
   },
@@ -129,15 +127,8 @@ export const People = [
     id: 3,
     name: 'tomek kozuba',
     title: 'producent filmowy',
-    description: `Zajmuję się produkcją filmów
-    skierowanych głównie na platformy
-    social media oraz YouTube. Tworzę w
-    przekonaniu, że historie, które
-    opowiadam mają zawierać w sobie
-    nie tylko walory estetyczne oraz
-    jakość wykonania, ale przede
-    wszystkim wartość sprzedażową i
-    komunikacyjną marki.`,
+    description: `Zajmuję się produkcją filmów skierowanych głównie na platformy social media oraz YouTube. Tworzę w przekonaniu, że historie, które opowiadam mają zawierać w sobie nie tylko walory estetyczne oraz jakość wykonania, ale przede wszystkim wartość sprzedażową i komunikacyjną marki. Ta fuzja daje najlepsze rezultaty. I mam na to dowody!
+    `,
     image: '/zdj/14.png',
     active: true,
   },
@@ -145,13 +136,9 @@ export const People = [
     id: 4,
     name: 'SALOMEA BARTOL',
     title: 'GRAPHIC DESIGNER',
-    description: `Moją specjalizacją jest grafika
-    rastrowa, ilustracje wszelkiego
-    rodzaju, projektowanie postaci,
-    nadruków a także logotypów i
-    plakatów. Bardzo dobrze się czuję
-    też w technikach tradycyjnych, żadne
-    medium nie jest mi obce.`,
+    description: `Cześć! 
+    Skończyłam college plastyczny w Wielkiej Brytanii. Moją specjalizacją jest grafika rastrowa, ilustracje wszelkiego rodzaju, projektowanie postaci, nadruków a także logotypów i plakatów. Bardzo dobrze się czuję też w technikach tradycyjnych, żadne medium nie jest mi obce. Przez wiele lat zajmowałam się rysowaniem ilustracji i digital paintingiem dla klientów indywidualnych. Grafika jest moją największą pasją którą cały czas rozwijam i w której staram się poszerzać swoje horyzonty, dlatego jestem otwarta na niekonwencjonalne pomysły i rozwiązania!`,
+
     image: '/zdj/21.png',
     active: true,
   },
@@ -159,19 +146,8 @@ export const People = [
     id: 5,
     name: 'ALEKSANDER GOLIS',
     title: 'prawnik',
-    description: `Cześć, jestem prawnikiem z krwi i
-    kości, doktorantem na Uniwersytecie
-    Śląskim. W ramach swoich działań w
-    Breath Design Studio realizuję nadzór
-    nad procesami prawnotwórczymi z
-    zakresu praw autorskich oraz prawa
-    cywilnego, postępowań
-    sprzedażowych, regulaminów sklepów
-    internetowych, regulacji działalności
-    stron internetowych oraz wszelkich
-    kwestii podatkowych, finansowych
-    obsługując również zakres prawa
-    spółek handlowych.`,
+    description: `Cześć, jestem prawnikiem z krwi i kości, doktorantem na Uniwersytecie Śląskim i wielkim fanem prawa cywilnego, energetycznego i ochrony środowiska oraz przyrody. W ramach swoich działań w Breath Design Studio realizuję nadzór nad procesami prawnotwórczymi z zakresu praw autorskich oraz szeroko pojętego prawa cywilnego w tym postępowań sprzedażowych, regulaminów sklepów internetowych, regulacji działalności stron internetowych oraz wszelkich kwestii podatkowych, finansowych obsługując również zakres prawa spółek handlowych.
+    `,
     image: '/zdj/23.png',
     active: true,
   },

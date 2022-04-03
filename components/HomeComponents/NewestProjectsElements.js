@@ -4,8 +4,9 @@ import Image from 'next/image';
 const Container = styled.div`
   width: 250px;
   height: 250px;
-  margin: 0 10px;
+  margin: 20px 10px;
   position: relative;
+  cursor: pointer;
 `;
 
 const ImageContainer = styled.div`
