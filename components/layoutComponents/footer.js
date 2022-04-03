@@ -46,6 +46,8 @@ const Subject = styled.h2`
 
   @media (min-width: 1024px) {
     width: 70%;
+  margin: 5px 40px;
+
     font-size: 100px;
     font-weight: 700;
   }
@@ -58,7 +60,6 @@ const Paragraph = styled.p`
   @media (min-width: 1024px) {
     width: 30%;
     font-size: 18px;
-    margin: 20px 0 50px 20px;
   }
 `;
 
@@ -84,6 +85,8 @@ const Anchor = styled.a`
 
   @media (min-width: 1024px) {
     font-size: 25px;
+  margin: 5px 40px;
+
   }
 `;
 

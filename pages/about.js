@@ -49,11 +49,12 @@ const Paragraph = styled.p`
   margin: 20px 20px;
 
   span {
+
     font-weight: 500;
   }
 
   @media (min-width: 1024px) {
-    margin: 40px 60px;
+    margin: ${({ margin }) => margin ? '20px 20px' : '20px 60px'};
     width: ${props => props.short ? '50%' : '100%'};
 
   }
@@ -63,7 +64,7 @@ const ButtonStyled = styled.button`
   width: 300px;
   height: 60px;
   background: transparent;
-  border: 1px solid #120093;
+  border: 1px solid #ffffff;
   font-size: 15px;
   color: #ffffff;
   font-family: "Now";
@@ -78,8 +79,8 @@ const ButtonStyled = styled.button`
   &:hover {
     background: #ffffff;
 
-    color: #120093;
-    font-weight: 600;
+    color: #000000;
+    font-weight: 500;
   }
 `;
 
@@ -99,7 +100,6 @@ const SecondSubject = styled.h2`
 
 const BrandContainer = styled.div`
 
-margin: 150px 0px;
 width: 100%;
 height: auto;
 
@@ -109,6 +109,8 @@ justify-content: center;
 align-items: center;
 
 @media (min-width: 1024px) {
+  top: -100px;
+  position: relative;
   flex-direction: row;
 justify-content: space-around;
 align-items: center;
@@ -257,7 +259,7 @@ const About = () => {
       <Container>
         <InnerContainer>
           <Subject>Dlaczego my?</Subject>
-          <Paragraph>
+          <Paragraph margin>
             SKUPIAMY UWAGĘ NA TWOJEJ MARCE <br />
             <br /> Od analizy marki, poprzez strategię komunikacji wizualnej po
             wdrożenie w postaci identyfikacji wizualnej Twojej marki. <br />

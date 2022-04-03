@@ -63,6 +63,8 @@ const Subject = styled.h2`
     width: 80%;
     font-size: 70px;
     font-weight: 700;
+  margin: 50px 40px;
+
   }
 `;
 
@@ -71,7 +73,13 @@ const SecondParahraph = styled.p`
   margin: 50px 20px;
   line-height: 160%;
 
+  span {
+    font-weight: 500;
+  }
+
   @media (min-width: 1024px) {
+  margin: 50px 40px;
+
     width: 50%;
     font-weight: 18px;
     margin: 100px 20px;
@@ -103,6 +111,9 @@ const ButtonStyled = styled.button`
 
   @media (min-width: 1024px) {
     left: 75%;
+    width: 280px;
+  height: 60px;
+  font-size: 18px;
   }
 `;
 
@@ -160,6 +171,7 @@ export default function Home() {
         <WelcomeComponents />
         <Paragraph>
           Projektujemy i tworzymy identyfikacje wizualne, strony internetowe,
+          <br/>
           grafikę użytkowa, produkcje filmowe i wiele innych...
         </Paragraph>
         <OfferComponent />
@@ -174,10 +186,13 @@ export default function Home() {
             <Image src='/GRADIENTS/6.png' width='2000' height='2000' priority />
           </ImageDivSecond>
           <SecondParahraph>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+          Nie wiesz jak nadać charakter swojej marce? A może masz w głowie pomysł, ale nie wiesz
+          jak zacząć i szukasz ciekawych rozwiązań?
+          <br/><br/>
+          Pomożemy Ci w tym!
+          Krok po kroku, stworzymy indywidualny projekt szyty na miarę na potrzeby Twojej firmy.
+            <br/><br/>
+          <span>Porozmawiajmy o potrzebach Twojej marki!</span>
           </SecondParahraph>
           <ButtonStyled>Wycena bez zobowiązań</ButtonStyled>
         </CountingDiv>

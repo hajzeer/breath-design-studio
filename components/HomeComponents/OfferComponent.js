@@ -87,9 +87,11 @@ const InnerOfferContainer = styled.div`
   align-items: center;
 
   @media (min-width: 1024px) {
-    width: 80%;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: row;
+  justify-items: center;
   }
 `;
 

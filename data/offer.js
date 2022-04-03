@@ -81,7 +81,7 @@ export const People = [
   {
     id: 0, 
     name: 'mateusz dittrich',
-    title: 'jaki tytuł',
+    title: 'członek zarządu',
     description:`Mateusz był głównym prowokatorem
     założenia marki. Przekonał mnie, że
     marzenia trzeba realizować i dążyć
