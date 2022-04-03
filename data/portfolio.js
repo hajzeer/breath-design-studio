@@ -24,4 +24,9 @@ export const Portfolio = [
     name: 'villa antiqua',
     image: '/portfolio/logo/villa_antiqua.png',
   },
+  {
+    id: 5,
+    name: 'po stronie wnętrz',
+    image: '/portfolio/logo/po_stronie_wnetrz.png',
+  },
 ];
