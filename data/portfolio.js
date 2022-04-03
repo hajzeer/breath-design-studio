@@ -32,7 +32,7 @@ export const Portfolio = [
   {
     id: 6,
     name: 'stacja pistacja',
-    image: '/portfolio/logo/stacja_pistacja.png',
+    image: '/portfolio/logo/stacja_pistacja.jpg',
   },
   {
     id: 7,
@@ -42,6 +42,6 @@ export const Portfolio = [
   {
     id: 8,
     name: 'restauracja lava',
-    image: '/portfolio/logo/lava.png',
+    image: '/portfolio/logo/lava.jpg',
   },
 ];
