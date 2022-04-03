@@ -85,24 +85,20 @@ export const People = [
         oraz projektantem graficznym. Od dziecka jestem silnie związana z
         szeroko pojętą sztuką. W swojej pracy kieruję się kreatywnością z
         przemyślaną strategią oraz komercyjnym zamysłem.
-
         Moim ulubionym momentem w pracy jest znalezienie oryginalnego i
         nieszablonowego rozwiązania, które odwzoruje charakter firmy moich
         klientów.
-
         Zajmuję się kierownictwem artystycznym, projektowaniem zaskakujących
         identyfikacji wizualnych marek. Moje projekty są nieoczywiste,
         dopasowane do docelowej grupy odbiorców. Przykładam wielką uwagę
         do innowacyjnych rozwiązań oraz dbałości o szczegóły.
-
         Każdą wolną chwilę spędzam na czerpaniu inspiracji. Kiedy nie
         projektuję, oddaję się tworzeniu obrazów, które dają mi możliwość
         przelania na płótno swoich emocji.
-
         Czerpię inspirację z otaczającej mnie natury, przechodniów oraz
         otoczenia, w którym żyje.`,
-    image: '/oliwia_dittrich.png',
-    gradient: '/GRADIENTS/1.png',
+    image: '/zdjęcia/9.png',
+    active: false,
   },
   {
     id: 1, 
@@ -117,8 +113,10 @@ export const People = [
     drukarniami, z którymi współpracujemy.
     
     Jest wsparciem dla całego zespołu oraz zawsze służy dobrym żartem!`,
-    image:'/zdj/2.png',
-    gradient: '/GRADIENTS/6.png',
+    image:'/zdjęcia/11.png',
+    active: true,
+
+    
   },
   {
     id: 2,
@@ -129,8 +127,9 @@ export const People = [
     o sobieutaj napisz o sobieutaj napisz o sobieutaj napisz o sobieutaj
     napisz o sobieutaj napisz o sobieutaj napisz o sobieutaj napisz o
     sobieutaj napisz o sobieutaj napisz o sobieutaj napisz o sobieutaj napisz`,
-    image:'/zdj/3.png',
-    gradient: '/GRADIENTS/5.png'
+    image:'/zdjęcia/27.png',
+    active: true,
+
   },
   {
     id: 3,
@@ -141,8 +140,9 @@ export const People = [
     plakatów. Zajmuję się również digital paintingiem. Od dziecka lubię tworzyć.
     Cały czas pracuję nad swoimi umiejętnościami i chcę się rozwijać
     w różnych dziedzinach sztuki!`,
-    image:'/zdj/4.png',
-    gradient: '/GRADIENTS/7.png'
+    image:'/zdjęcia/16.png',
+    active: true,
+
   },
   {
     id: 4,
@@ -152,8 +152,9 @@ export const People = [
     YouTube. Tworzę w przekonaniu, że historie, które opowiadam mają zawierać w sobie nie
     tylko walory estetyczne oraz jakość wykonania, ale przede wszystkim wartość sprzedażową
     i komunikacyjną marki. Ta fuzja daje najlepsze rezultaty. I mam na to dowody!`,
-    image:'/zdj/5.png',
-    gradient: '/GRADIENTS/7.png'
+    image:'/zdjęcia/14.png',
+    active: true,
+
   },
   {
     id: 5,
@@ -168,8 +169,9 @@ export const People = [
     klientów indywidualnych. Grafika jest moją największą pasją którą cały czas rozwijam i w
     której staram się poszerzać swoje horyzonty, dlatego jestem otwarta na niekonwencjonalne
     pomysły i rozwiązania!`,
-    image:'/zdj/6.png',
-    gradient: '/GRADIENTS/4.png'
+    image:'/zdjęcia/21.png',
+    active: true,
+
   },
   {
     id: 6,
@@ -181,7 +183,8 @@ export const People = [
     autorskich oraz szeroko pojętego prawa cywilnego w tym postępowań sprzedażowych,
     regulaminów sklepów internetowych, regulacji działalności stron internetowych oraz wszelkich
     kwestii podatkowych, finansowych obsługując również zakres prawa spółek handlowych.`,
-    image:'/zdj/7.png',
-    gradient: '/GRADIENTS/3.png'
+    image:'/zdjęcia/23.png',
+    active: true,
+
   },
 ]

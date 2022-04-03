@@ -4,6 +4,7 @@ import { useState } from "react";
 import styled from "styled-components";
 import Image from "next/image";
 import Link from "next/link";
+import NavBar from "./navBar";
 
 const Container = styled.header`
   width: 100%;
@@ -32,13 +33,16 @@ const BluredDiv = styled.div`
   left: 0;
   margin: 0;
   padding: 0;
+  z-index: 9999;
+
 `;
 
 const ImageContainer = styled.div`
   width: 100px;
   height: 100px;
   display: block;
-  z-index: 100;
+  z-index: 9999;
+  cursor: pointer;
 `;
 
 const HamburderContainer = styled.button`
@@ -53,7 +57,7 @@ const HamburderContainer = styled.button`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 100;
+  z-index: 9999;
 
   @media (min-width: 1024px) {
     display: none;
@@ -108,10 +112,10 @@ const NavBarDiv = styled.div`
   }
 `;
 
-const Anchor = styled.p`
+const Anchor = styled.a`
   color: #ffffff;
   z-index: 100;
-
+  cursor: pointer;
   padding: 10px 20px;
   transition: all 0.2s ease-out;
 
@@ -141,12 +145,23 @@ const Header = () => {
         <HamburgerSpan active={isActive} />
       </HamburderContainer>
       <NavBarDiv>
+        <Link href='/about'>
         <Anchor>O Nas</Anchor>
+        </Link>
+        <Link href='/'>
         <Anchor>Portfolio</Anchor>
+        </Link>
+        <Link href='/'>
         <Anchor>Blog</Anchor>
+        </Link>
+        <Link href='/'>
         <Anchor>Oferta</Anchor>
+        </Link>
+        <Link href='/'> 
         <Anchor>Kontakt</Anchor>
+        </Link>
       </NavBarDiv>
+      <NavBar open={isActive}/>
     </Container>
   );
 };
