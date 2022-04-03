@@ -29,4 +29,19 @@ export const Portfolio = [
     name: 'po stronie wnętrz',
     image: '/portfolio/logo/po_stronie_wnetrz.png',
   },
+  {
+    id: 6,
+    name: 'stacja pistacja',
+    image: '/portfolio/logo/stacja_pistacja.png',
+  },
+  {
+    id: 7,
+    name: 'kozuba',
+    image: '/portfolio/logo/kozuba.png',
+  },
+  {
+    id: 8,
+    name: 'restauracja lava',
+    image: '/portfolio/logo/lava.png',
+  },
 ];
