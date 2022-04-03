@@ -135,7 +135,7 @@ const Header = () => {
   const handleClick = () => {
     if (isActive === false) {
       setIsActive(true);
-    } else setIsActive(!isActive);
+    } else setIsActive(false);
   };
 
   return (
@@ -167,7 +167,7 @@ const Header = () => {
         <Link href="/">
           <Anchor>Oferta</Anchor>
         </Link>
-        <Link href={window.location.pathname + '#contact'}>
+        <Link href="/#contact">
           <Anchor>Kontakt</Anchor>
         </Link>
       </NavBarDiv>

@@ -49,7 +49,6 @@ html {
 `;
 
 const Layout = ({ children }) => {
-  console.log(window.location.pathname);
   return (
     <>
       <GlobalStyle />

@@ -46,17 +46,17 @@ const navBar = ({ open, unActive }) => {
         <Link href="/about">
           <Anchor onClick={unActive}>O Nas</Anchor>
         </Link>
-        <Link href="/" onClick={unActive}>
-          <Anchor>Portfolio</Anchor>
+        <Link href="/">
+          <Anchor onClick={unActive}>Portfolio</Anchor>
         </Link>
-        <Link href="/" onClick={unActive}>
-          <Anchor>Blog</Anchor>
+        <Link href="/">
+          <Anchor onClick={unActive}>Blog</Anchor>
         </Link>
-        <Link href="/" onClick={unActive}>
-          <Anchor>Oferta</Anchor>
+        <Link href="/">
+          <Anchor onClick={unActive}>Oferta</Anchor>
         </Link>
-        <Link href="/#contact" onClick={unActive}>
-          <Anchor>Kontakt</Anchor>
+        <Link href="/#contact">
+          <Anchor onClick={unActive}>Kontakt</Anchor>
         </Link>
       </InnerContainer>
     </Container>
