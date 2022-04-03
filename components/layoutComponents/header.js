@@ -132,7 +132,12 @@ const Anchor = styled.a`
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
 
-  console.log(isActive);
+  const handleClick = () => {
+    if (isActive === false) {
+      setIsActive(true);
+    } else setIsActive(!isActive);
+  };
+
   return (
     <Container>
       <BluredDiv />
@@ -146,7 +151,7 @@ const Header = () => {
           />
         </ImageContainer>
       </Link>
-      <HamburderContainer onClick={() => setIsActive(!isActive)}>
+      <HamburderContainer onClick={handleClick}>
         <HamburgerSpan active={isActive} />
       </HamburderContainer>
       <NavBarDiv>
@@ -162,11 +167,11 @@ const Header = () => {
         <Link href="/">
           <Anchor>Oferta</Anchor>
         </Link>
-        <Link href="/">
+        <Link href={window.location.pathname + '#contact'}>
           <Anchor>Kontakt</Anchor>
         </Link>
       </NavBarDiv>
-      <NavBar open={isActive} />
+      <NavBar open={isActive} unActive={handleClick} />
     </Container>
   );
 };

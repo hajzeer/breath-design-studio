@@ -20,13 +20,12 @@ const InnerContainer = styled.div`
   margin: 30px 0;
   left: 50%;
   margin-left: -45%;
-  padding: 20px;
 
   border: 1px solid #ffffff;
 
   @media (min-width: 1024px) {
-    width: 80%;
-    margin-left: -40%;
+    width: 70%;
+    margin-left: -35%;
   }
 `;
 
@@ -37,19 +36,16 @@ const Subject = styled.h2`
   margin: 20px;
   position: relative;
 
-  &::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    left: 0;
-    bottom: -5px;
-    background: #ffffff;
-  }
-
   @media (min-width: 1024px) {
     font-size: 45px;
   }
+`;
+
+const DivHelper = styled.div`
+  position: relative;
+  width: 100%;
+  height: 1px;
+  background: #ffffff;
 `;
 
 const Paragraph = styled.p`
@@ -61,8 +57,8 @@ const Paragraph = styled.p`
   }
 
   @media (min-width: 1024px) {
-    margin: ${({ margin }) => (margin ? '20px 20px' : '20px 60px')};
-    width: ${(props) => (props.short ? '50%' : '100%')};
+    margin: ${({ margin }) => (margin ? '40px 20px' : '20px 60px')};
+    width: ${(props) => (props.short ? '50%' : 'none')};
   }
 `;
 
@@ -245,8 +241,9 @@ const About = () => {
   return (
     <Layout>
       <Container>
-        <InnerContainer>
+        <InnerContainer align>
           <Subject>Dlaczego my?</Subject>
+          <DivHelper />
           <Paragraph margin>
             SKUPIAMY UWAGĘ NA TWOJEJ MARCE <br />
             <br /> Od analizy marki, poprzez strategię komunikacji wizualnej po

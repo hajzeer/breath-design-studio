@@ -40,9 +40,16 @@ body {
     padding: 0;
     font-family: 'Now';
 }
+
+html {
+  scroll-behavior: smooth;
+
+}
+
 `;
 
 const Layout = ({ children }) => {
+  console.log(window.location.pathname);
   return (
     <>
       <GlobalStyle />

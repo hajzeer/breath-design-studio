@@ -39,23 +39,23 @@ const InnerContainer = styled.div`
   align-items: center;
 `;
 
-const navBar = ({ open }) => {
+const navBar = ({ open, unActive }) => {
   return (
     <Container open={open}>
       <InnerContainer>
         <Link href="/about">
-          <Anchor>O Nas</Anchor>
+          <Anchor onClick={unActive}>O Nas</Anchor>
         </Link>
-        <Link href="/">
+        <Link href="/" onClick={unActive}>
           <Anchor>Portfolio</Anchor>
         </Link>
-        <Link href="/">
+        <Link href="/" onClick={unActive}>
           <Anchor>Blog</Anchor>
         </Link>
-        <Link href="/">
+        <Link href="/" onClick={unActive}>
           <Anchor>Oferta</Anchor>
         </Link>
-        <Link href="/">
+        <Link href="/#contact" onClick={unActive}>
           <Anchor>Kontakt</Anchor>
         </Link>
       </InnerContainer>
