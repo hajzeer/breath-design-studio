@@ -3,7 +3,7 @@
 const NewestProject = () => {
   return (
     <>
-      <p>hello world</p>
+      <p>world hello</p>
     </>
   );
 };
