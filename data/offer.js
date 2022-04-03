@@ -92,7 +92,7 @@ export const People = [
     kontaktami z kontrahentami oraz
     drukarniami, z którymi
     współpracujemy.`,
-    image:'/zdjęcia/11.png',
+    image:'/zdj/11.png',
     active: true,
 
     
@@ -105,7 +105,7 @@ export const People = [
     blablablalbalblblablablalbalblbl
     ablablalbalblblablablalbalbl
     blablablalbalbl`,
-    image:'/zdjęcia/27.png',
+    image:'/zdj/27.png',
     active: true,
 
   },
@@ -119,7 +119,7 @@ export const People = [
     wizytówek, voucherów, plakatów.
     Zajmuję się również digital
     paintingiem.`,
-    image:'/zdjęcia/16.png',
+    image:'/zdj/16.png',
     active: true,
 
   },
@@ -136,7 +136,7 @@ export const People = [
     jakość wykonania, ale przede
     wszystkim wartość sprzedażową i
     komunikacyjną marki.`,
-    image:'/zdjęcia/14.png',
+    image:'/zdj/14.png',
     active: true,
 
   },
@@ -151,7 +151,7 @@ export const People = [
     plakatów. Bardzo dobrze się czuję
     też w technikach tradycyjnych, żadne
     medium nie jest mi obce.`,
-    image:'/zdjęcia/21.png',
+    image:'/zdj/21.png',
     active: true,
 
   },
@@ -172,7 +172,7 @@ export const People = [
     kwestii podatkowych, finansowych
     obsługując również zakres prawa
     spółek handlowych.`,
-    image:'/zdjęcia/23.png',
+    image:'/zdj/23.png',
     active: true,
 
   },

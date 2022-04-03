@@ -147,7 +147,7 @@ const TeamList = ({ items }) => {
         <MainContainer active>
                             <MainContentDiv>
                             <ImageDiv>
-                                <Image src='/zdjęcia/9.png' width={500} height={500}/>
+                                <Image src='/zdj/9.png' width={500} height={500}/>
                             </ImageDiv>
                             <TextContainer>
                             <Subject>oliwia dittrich</Subject>
