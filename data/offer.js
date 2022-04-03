@@ -81,7 +81,7 @@ export const People = [
   {
     id: 0, 
     name: 'mateusz dittrich',
-    title: ' ',
+    title: 'jaki tytuł',
     description:`Mateusz był głównym prowokatorem
     założenia marki. Przekonał mnie, że
     marzenia trzeba realizować i dążyć
@@ -100,7 +100,7 @@ export const People = [
   {
     id: 1,
     name: 'krzysiu hajder',
-    title: 'PROGRAMISTA / PROJEKTANT STRON www i aplikacji',
+    title: 'PROGRAMISTA STRON I APLIKACJI',
     description: `blablablalbalbl blablablalbalbl blablablalbalbl blablablalbalbl blablablalbalbl
     blablablalbalblblablablalbalblbl
     ablablalbalblblablablalbalbl

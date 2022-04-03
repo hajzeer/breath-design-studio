@@ -43,6 +43,11 @@ const ImageContainer = styled.div`
   display: block;
   z-index: 9999;
   cursor: pointer;
+
+  @media (min-width: 1024px) {
+    width: 150px;
+  height: 150px;
+  }
 `;
 
 const HamburderContainer = styled.button`
@@ -106,6 +111,7 @@ const NavBarDiv = styled.div`
   align-items: center;
   z-index: 100;
   margin: 0 20px;
+  z-index: 9999;
 
   @media (max-width: 1024px) {
     display: none;

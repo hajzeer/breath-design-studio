@@ -12,15 +12,45 @@ margin: 100px 0;
 color:#fff;
 
 border: ${props => props.active ? '2px solid #120093': '1px solid #ffffff'};
+
+@media (min-width: 1024px) {
+    
+height: 600;
+
+
+
+  }
 `
+
+const MainContainer =  styled.div`
+width: 90%;
+height: auto;
+display: flex;
+flex-direction: column;
+justify-content: center;
+position: relative;
+margin: 100px 0;
+color:#fff;
+border: ${props => props.active ? '2px solid #120093': '1px solid #ffffff'};
+
+
+@media (min-width: 1024px) {
+        width: 95%;
+    
+        grid-column-start: 1;
+        grid-column-end: 4;
+    
+    
+      }
+
+`
+
+
 
 const TextContainer = styled.div`
 
-
 margin: 40px;
 width: 95%;
-
-
 `
 
 const Subject = styled.h2`
@@ -28,8 +58,6 @@ const Subject = styled.h2`
 color:#ffffff;
 text-transform: uppercase;
 margin: 20px;
-
-
 `
 
 const Paragraph = styled.p`
@@ -47,6 +75,7 @@ const ImageDiv = styled.div`
 width: 95%;
 height: auto;
 padding: 10px;
+
 
 
 `
@@ -87,6 +116,7 @@ h2 {
 
 const ContentDiv = styled.div`
 
+
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -95,19 +125,33 @@ z-index: -1;
 
 
 `
+const MainContentDiv = styled.div`
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+@media (min-width: 1024px) {
+            flex-direction: row;
+            justify-content: space-between;
+    
+    
+      }
+
+`
 
 const TeamList = ({ items }) => {
     return (
         <>
-        <Container active>
-                            <ContentDiv>
+        <MainContainer active>
+                            <MainContentDiv>
                             <ImageDiv>
                                 <Image src='/zdjęcia/9.png' width={500} height={500}/>
                             </ImageDiv>
                             <TextContainer>
                             <Subject>oliwia dittrich</Subject>
                             <Paragraph><span>FOUNDER / CREATIVE DIRECTOR / GRAPHIC DESIGNER</span></Paragraph>
-                            </TextContainer >
                             <Paragraph>Jestem założycielką BREATH DESIGN STUDIO, dyrektorem kreatywnym
                                         oraz projektantem graficznym. Od dziecka jestem silnie związana z
                                         szeroko pojętą sztuką. W swojej pracy kieruję się kreatywnością z
@@ -125,10 +169,12 @@ const TeamList = ({ items }) => {
                                         Czerpię inspirację z otaczającej mnie natury, przechodniów oraz
                                         otoczenia, w którym żyje.
                             </Paragraph>
-                            </ContentDiv>
+                            </TextContainer >
+                            </MainContentDiv>
 
 
-                        </Container>
+                        </MainContainer>
+
             {
                 items.map(item => {
                     return (

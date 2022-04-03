@@ -12,6 +12,7 @@ const Container = styled.div`
   padding: 120px 0;
   overflow: hidden;
   position: relative;
+
 `;
 
 const InnerContainer = styled.div`
@@ -22,12 +23,25 @@ const InnerContainer = styled.div`
   margin-left: -45%;
 
   border: 1px solid #ffffff;
+
+  @media (min-width: 1024px) {
+    width: 70%;
+    margin-left: -35%;
+
+  }
 `;
 
 const Subject = styled.h2`
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
+  text-align: left;
+  padding: 20px;
+
+  @media (min-width: 1024px) {
+    font-size: 45px;
+    border-bottom: 1px solid #ffffff;
+  }
 `;
 
 const Paragraph = styled.p`
@@ -36,6 +50,12 @@ const Paragraph = styled.p`
 
   span {
     font-weight: 500;
+  }
+
+  @media (min-width: 1024px) {
+    margin: 40px 60px;
+    width: ${props => props.short ? '50%' : '100%'};
+
   }
 `;
 
@@ -69,7 +89,32 @@ const SecondSubject = styled.h2`
 
   color: #ffffff;
   text-transform: uppercase;
+
+  @media (min-width: 1024px) {
+    font-weight: 600;
+    margin: 40px 60px;
+
+  }
 `;
+
+const BrandContainer = styled.div`
+
+margin: 150px 0px;
+width: 100%;
+height: auto;
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+@media (min-width: 1024px) {
+  flex-direction: row;
+justify-content: space-around;
+align-items: center;
+  }
+
+`
 
 const ImageDivFirst = styled.div`
   position: absolute;
@@ -92,6 +137,12 @@ const ThirdSubject = styled.h2`
   letter-spacing: 2px;
   text-transform: uppercase;
   margin: 40px 20px;
+
+  @media (min-width: 1024px) {
+    font-weight: 600;
+    margin: 40px 60px;
+
+  }
 
   
 `;
@@ -174,6 +225,12 @@ font-weight: 500;
 margin: 20px;
 font-size: 25px;
 
+@media (min-width: 1024px) {
+  font-size: 30px;
+    text-align: center;
+
+  }
+
 `;
 
 const SecondFinishParagraph = styled.p`
@@ -182,6 +239,14 @@ color: #ffffff;
 font-weight: 500;
 margin: 20px;
 font-size: 20px;
+
+@media (min-width: 1024px) {
+
+    text-align: center;
+    font-size: 30px;
+
+
+  }
 
 
 `;
@@ -209,7 +274,7 @@ const About = () => {
           <Image src='/GRADIENTS/1.png' width='2000' height='2000' />
         </ImageDivFirst>
         <SecondSubject>skupiamy uwagę na twojej marce</SecondSubject>
-        <Paragraph>
+        <Paragraph short>
           Twoi klienci „kupują wzrokiem”. Zaintrygowani nietypowymi
           rozwiązaniami, mogą zapamiętać właśnie Twoją markę. Tak jak oni
           przywiązujemy ogromną wagę do detalu. To on często decyduje o
@@ -218,7 +283,7 @@ const About = () => {
         <Paragraph>
           <span>Każdy projekt jest dla nas najważniejszy!</span>
         </Paragraph>
-        <div>
+        <BrandContainer>
           <TextContainer>
             <ThirdSubject>
               Przykładowe punkty styku klienta z twoją marką
@@ -239,7 +304,7 @@ const About = () => {
               })
             }
           </ListContainer>
-        </div>
+        </BrandContainer>
         <TeamComponent />
         <FinishDiv>
           <FirstFinishParagraph>
