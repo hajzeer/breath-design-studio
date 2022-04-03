@@ -6,6 +6,7 @@ import Layout from '../layout/layout';
 import OfferComponent from '../components/HomeComponents/OfferComponent';
 import Image from 'next/image';
 import { MoveOne, MoveTwo } from '../utils/animations';
+import NewestProjects from '../components/HomeComponents/NewestProjects';
 
 const Container = styled.div`
   width: 100%;
@@ -174,6 +175,7 @@ export default function Home() {
           grafikę użytkowa, produkcje filmowe i wiele innych...
         </Paragraph>
         <OfferComponent />
+        <NewestProjects />
         <CountingDiv>
           <TextContainer>
             <Subject>SZUKASZ WYJĄTKOWEGO PROJEKTU?</Subject>

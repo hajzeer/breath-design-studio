@@ -15,29 +15,40 @@ const Container = styled.div`
 
 const InnerContainer = styled.div`
   width: 90%;
+  height: auto;
   position: relative;
   margin: 30px 0;
   left: 50%;
   margin-left: -45%;
+  padding: 20px;
 
   border: 1px solid #ffffff;
 
   @media (min-width: 1024px) {
-    width: 70%;
-    margin-left: -35%;
+    width: 80%;
+    margin-left: -40%;
   }
 `;
 
 const Subject = styled.h2`
   color: #ffffff;
   text-transform: uppercase;
-  text-align: center;
   text-align: left;
-  padding: 20px;
+  margin: 20px;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: -5px;
+    background: #ffffff;
+  }
 
   @media (min-width: 1024px) {
     font-size: 45px;
-    border-bottom: 1px solid #ffffff;
   }
 `;
 
@@ -95,7 +106,7 @@ const SecondSubject = styled.h2`
 const BrandContainer = styled.div`
   width: 100%;
   height: auto;
-
+  padding: 40px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -45,6 +45,7 @@ const Subject = styled.h2`
   align-self: flex-start;
   color: #ffffff;
   font-size: 25px;
+  margin: 0 20px;
 
   @media (min-width: 1024px) {
     font-size: 50px;
