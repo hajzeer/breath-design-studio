@@ -1,8 +1,8 @@
 /** @format */
 
-import styled, { keyframes } from "styled-components";
-import Image from "next/image";
-import { MoveOne } from "../../utils/animations";
+import styled, { keyframes } from 'styled-components';
+import Image from 'next/image';
+import { MoveOne } from '../../utils/animations';
 const Container = styled.div`
   position: relative;
   bottom: 0;
@@ -21,7 +21,7 @@ const TextContainer = styled.div`
   justify-content: center;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     width: 100%;
     height: 1px;
@@ -46,7 +46,7 @@ const Subject = styled.h2`
 
   @media (min-width: 1024px) {
     width: 70%;
-  margin: 5px 40px;
+    margin: 5px 40px;
 
     font-size: 100px;
     font-weight: 700;
@@ -85,8 +85,7 @@ const Anchor = styled.a`
 
   @media (min-width: 1024px) {
     font-size: 25px;
-  margin: 5px 40px;
-
+    margin: 5px 40px;
   }
 `;
 
@@ -140,7 +139,7 @@ const Footer = () => {
   return (
     <Container>
       <ImageDiv>
-        <Image src='/GRADIENTS/7.png' width='2000' height='2000' />
+        <Image src="/GRADIENTS/7.png" width="2000" height="2000" />
       </ImageDiv>
       <TextContainer>
         <Subject>
@@ -150,36 +149,36 @@ const Footer = () => {
       </TextContainer>
       <ContentContainer>
         <ContactContainer>
-          <Anchor href='mailto:breath.design.studio@gmail.com'>
+          <Anchor href="mailto:breath.design.studio@gmail.com">
             breath.design.studio@gmail.com
           </Anchor>
-          <Anchor href='tel:+48-538-324-858'>(+48) 538 324 858</Anchor>
+          <Anchor href="tel:+48-538-324-858">(+48) 538 324 858</Anchor>
         </ContactContainer>
         <SocialMediaContainer>
           <SocialMediaAnchor
-            href='https://www.instagram.com/breath.d.s/'
-            target='_blank'>
-            <Image src='/icons/10.png' width='40' height='40' />
+            href="https://www.instagram.com/breath.d.s/"
+            target="_blank">
+            <Image src="/icons/10.png" width="40" height="40" />
           </SocialMediaAnchor>
           <SocialMediaAnchor
-            href='https://www.facebook.com/breathdesignstudio'
-            target='_blank'>
-            <Image src='/icons/11.png' width='40' height='40' />
+            href="https://www.facebook.com/breathdesignstudio"
+            target="_blank">
+            <Image src="/icons/11.png" width="40" height="40" />
           </SocialMediaAnchor>
           <SocialMediaAnchor
-            href='https://pl.pinterest.com/Breathdesignstudio'
-            target='_blank'>
-            <Image src='/icons/12.png' width='40' height='40' />
+            href="https://pl.pinterest.com/Breathdesignstudio"
+            target="_blank">
+            <Image src="/icons/12.png" width="40" height="40" />
           </SocialMediaAnchor>
           <SocialMediaAnchor
-            href='https://www.behance.net/oliwiagolis'
-            target='_blank'>
-            <Image src='/icons/13.png' width='40' height='40' />
+            href="https://www.behance.net/oliwiagolis"
+            target="_blank">
+            <Image src="/icons/13.png" width="40" height="40" />
           </SocialMediaAnchor>
           <SocialMediaAnchor
-            href='https://www.linkedin.com/in/oliwia-dittrich-a4214b228'
-            target='_blank'>
-            <Image src='/icons/14.png' width='40' height='40' />
+            href="https://www.linkedin.com/in/oliwia-dittrich-a4214b228"
+            target="_blank">
+            <Image src="/icons/14.png" width="40" height="40" />
           </SocialMediaAnchor>
         </SocialMediaContainer>
       </ContentContainer>

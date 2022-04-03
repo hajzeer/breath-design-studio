@@ -1,11 +1,11 @@
 /** @format */
 
-import styled from "styled-components";
-import WelcomeComponents from "../components/HomeComponents/WelcomeComponents";
-import Layout from "../layout/layout";
-import OfferComponent from "../components/HomeComponents/OfferComponent";
-import Image from "next/image";
-import { MoveOne, MoveTwo } from "../utils/animations";
+import styled from 'styled-components';
+import WelcomeComponents from '../components/HomeComponents/WelcomeComponents';
+import Layout from '../layout/layout';
+import OfferComponent from '../components/HomeComponents/OfferComponent';
+import Image from 'next/image';
+import { MoveOne, MoveTwo } from '../utils/animations';
 
 const Container = styled.div`
   width: 100%;
@@ -32,7 +32,7 @@ const TextContainer = styled.div`
   position: relative;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     width: 100%;
     height: 1px;
@@ -42,7 +42,7 @@ const TextContainer = styled.div`
   }
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     width: 80%;
     height: 1px;
@@ -63,8 +63,7 @@ const Subject = styled.h2`
     width: 80%;
     font-size: 70px;
     font-weight: 700;
-  margin: 50px 40px;
-
+    margin: 50px 40px;
   }
 `;
 
@@ -78,7 +77,7 @@ const SecondParahraph = styled.p`
   }
 
   @media (min-width: 1024px) {
-  margin: 50px 40px;
+    margin: 50px 40px;
 
     width: 50%;
     font-weight: 18px;
@@ -99,7 +98,7 @@ const ButtonStyled = styled.button`
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-family: "Now";
+  font-family: 'Now';
   font-weight: 500;
   cursor: pointer;
 
@@ -112,8 +111,8 @@ const ButtonStyled = styled.button`
   @media (min-width: 1024px) {
     left: 75%;
     width: 280px;
-  height: 60px;
-  font-size: 18px;
+    height: 60px;
+    font-size: 18px;
   }
 `;
 
@@ -171,7 +170,7 @@ export default function Home() {
         <WelcomeComponents />
         <Paragraph>
           Projektujemy i tworzymy identyfikacje wizualne, strony internetowe,
-          <br/>
+          <br />
           grafikę użytkowa, produkcje filmowe i wiele innych...
         </Paragraph>
         <OfferComponent />
@@ -180,19 +179,21 @@ export default function Home() {
             <Subject>SZUKASZ WYJĄTKOWEGO PROJEKTU?</Subject>
           </TextContainer>
           <ImageDivFirst>
-            <Image src='/GRADIENTS/5.png' width='2000' height='2000' />
+            <Image src="/GRADIENTS/5.png" width="2000" height="2000" />
           </ImageDivFirst>
           <ImageDivSecond>
-            <Image src='/GRADIENTS/6.png' width='2000' height='2000' priority />
+            <Image src="/GRADIENTS/6.png" width="2000" height="2000" priority />
           </ImageDivSecond>
           <SecondParahraph>
-          Nie wiesz jak nadać charakter swojej marce? A może masz w głowie pomysł, ale nie wiesz
-          jak zacząć i szukasz ciekawych rozwiązań?
-          <br/><br/>
-          Pomożemy Ci w tym!
-          Krok po kroku, stworzymy indywidualny projekt szyty na miarę na potrzeby Twojej firmy.
-            <br/><br/>
-          <span>Porozmawiajmy o potrzebach Twojej marki!</span>
+            Nie wiesz jak nadać charakter swojej marce? A może masz w głowie
+            pomysł, ale nie wiesz jak zacząć i szukasz ciekawych rozwiązań?
+            <br />
+            <br />
+            Pomożemy Ci w tym! Krok po kroku, stworzymy indywidualny projekt
+            szyty na miarę na potrzeby Twojej firmy.
+            <br />
+            <br />
+            <span>Porozmawiajmy o potrzebach Twojej marki!</span>
           </SecondParahraph>
           <ButtonStyled>Wycena bez zobowiązań</ButtonStyled>
         </CountingDiv>

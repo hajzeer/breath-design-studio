@@ -1,88 +1,94 @@
 /** @format */
 
-
 export const data = {
   offer: [
     {
       id: 0,
-      title: "IDENTYFIKACJE WIZUALNE",
+      title: 'IDENTYFIKACJE WIZUALNE',
       description: [
-        "Projekty logo",
-        "Branding i Rebranding",
-        "Księga znaku",
-        "Projekty książek i katalogów",
-        "System identyfikacji",
+        'Projekty logo',
+        'Branding i Rebranding',
+        'Księga znaku',
+        'Projekty książek i katalogów',
+        'System identyfikacji',
       ],
     },
     {
       id: 1,
-      title: "strony internetowe",
+      title: 'strony internetowe',
       description: [
-        "Serwisy internetowe",
-        "Kreatywne projekty",
-        "Dedykowane strony WWW",
-        "Sklepy e-commerce",
-        "W pełni responsywne",
-        "Napisane w pełni w kodzie",
+        'Serwisy internetowe',
+        'Kreatywne projekty',
+        'Dedykowane strony WWW',
+        'Sklepy e-commerce',
+        'W pełni responsywne',
+        'Napisane w pełni w kodzie',
       ],
     },
     {
       id: 2,
-      title: "OBSŁUGA GRAFICZNA FIRM",
+      title: 'OBSŁUGA GRAFICZNA FIRM',
       description: [
-        "Materiały reklamowe",
-        "Materiały drukowane",
-        "Szablony na social media",
-        "Projekty grafiki użytkowej",
-        "Stoiska, targi, kreatywne witryny",
+        'Materiały reklamowe',
+        'Materiały drukowane',
+        'Szablony na social media',
+        'Projekty grafiki użytkowej',
+        'Stoiska, targi, kreatywne witryny',
       ],
     },
     {
       id: 3,
-      title: "PROJEKTY OPAKOWAŃ",
+      title: 'PROJEKTY OPAKOWAŃ',
       description: [
-        "Etykiety produktów",
-        "Opakowania produktowe",
-        "Wizualizacje produktów",
-        "Szablony promocyjne",
-        "Kampanie produktowe",
+        'Etykiety produktów',
+        'Opakowania produktowe',
+        'Wizualizacje produktów',
+        'Szablony promocyjne',
+        'Kampanie produktowe',
       ],
     },
     {
       id: 4,
-      title: "PRODUKCJA FILMOWA",
+      title: 'PRODUKCJA FILMOWA',
       description: [
-        "Filmy produktowe",
-        "Reportaże reklamowe",
-        "Sesje produktowe",
-        "Filmów na social media",
-        "Teledyski",
+        'Filmy produktowe',
+        'Reportaże reklamowe',
+        'Sesje produktowe',
+        'Filmów na social media',
+        'Teledyski',
       ],
     },
     {
       id: 5,
-      title: "PROJEKTY DRUKOWANE",
+      title: 'PROJEKTY DRUKOWANE',
       description: [
-        "Broszury /magazyny / ulotki",
-        "Zaproszenia / vouchery",
-        "Publikacje do druku",
-        "Książki / e-booki",
-        "Katalogi produktowe",
+        'Broszury /magazyny / ulotki',
+        'Zaproszenia / vouchery',
+        'Publikacje do druku',
+        'Książki / e-booki',
+        'Katalogi produktowe',
       ],
     },
   ],
 };
 
-
-export const CustomerPOV = ['logo', 'kolorystyka', 'krój pisma', 'druki firmowe', 'księga znaku', 'opakowania produktów', 'social media', 'uniformy']
+export const CustomerPOV = [
+  'logo',
+  'kolorystyka',
+  'krój pisma',
+  'druki firmowe',
+  'księga znaku',
+  'opakowania produktów',
+  'social media',
+  'uniformy',
+];
 
 export const People = [
-
   {
-    id: 0, 
+    id: 0,
     name: 'mateusz dittrich',
     title: 'członek zarządu',
-    description:`Mateusz był głównym prowokatorem
+    description: `Mateusz był głównym prowokatorem
     założenia marki. Przekonał mnie, że
     marzenia trzeba realizować i dążyć
     do spełnienia wyznaczonych celów.
@@ -92,10 +98,8 @@ export const People = [
     kontaktami z kontrahentami oraz
     drukarniami, z którymi
     współpracujemy.`,
-    image:'/zdj/11.png',
+    image: '/zdj/11.png',
     active: true,
-
-    
   },
   {
     id: 1,
@@ -105,9 +109,8 @@ export const People = [
     blablablalbalblblablablalbalblbl
     ablablalbalblblablablalbalbl
     blablablalbalbl`,
-    image:'/zdj/27.png',
+    image: '/zdj/27.png',
     active: true,
-
   },
   {
     id: 2,
@@ -119,9 +122,8 @@ export const People = [
     wizytówek, voucherów, plakatów.
     Zajmuję się również digital
     paintingiem.`,
-    image:'/zdj/16.png',
+    image: '/zdj/16.png',
     active: true,
-
   },
   {
     id: 3,
@@ -136,9 +138,8 @@ export const People = [
     jakość wykonania, ale przede
     wszystkim wartość sprzedażową i
     komunikacyjną marki.`,
-    image:'/zdj/14.png',
+    image: '/zdj/14.png',
     active: true,
-
   },
   {
     id: 4,
@@ -151,9 +152,8 @@ export const People = [
     plakatów. Bardzo dobrze się czuję
     też w technikach tradycyjnych, żadne
     medium nie jest mi obce.`,
-    image:'/zdj/21.png',
+    image: '/zdj/21.png',
     active: true,
-
   },
   {
     id: 5,
@@ -172,8 +172,7 @@ export const People = [
     kwestii podatkowych, finansowych
     obsługując również zakres prawa
     spółek handlowych.`,
-    image:'/zdj/23.png',
+    image: '/zdj/23.png',
     active: true,
-
   },
-]
+];

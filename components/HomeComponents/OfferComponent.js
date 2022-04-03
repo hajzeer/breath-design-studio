@@ -1,8 +1,8 @@
 /** @format */
-import { useState, useEffect } from "react";
-import styled from "styled-components";
-import OfferItems from "./OfferItems";
-import { data } from "../../data/offer";
+import { useState, useEffect } from 'react';
+import styled from 'styled-components';
+import OfferItems from './OfferItems';
+import { data } from '../../data/offer';
 
 const Container = styled.div`
   width: 100%;
@@ -16,7 +16,7 @@ const TextContainer = styled.div`
   position: relative;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     width: 100%;
     height: 1px;
@@ -26,7 +26,7 @@ const TextContainer = styled.div`
   }
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     width: 50%;
     height: 1px;
@@ -91,7 +91,7 @@ const InnerOfferContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-flow: row;
-  justify-items: center;
+    justify-items: center;
   }
 `;
 

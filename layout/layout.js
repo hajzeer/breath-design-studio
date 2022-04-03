@@ -1,9 +1,9 @@
 /** @format */
 
-import { createGlobalStyle } from "styled-components";
-import Head from "next/head";
-import Header from "../components/layoutComponents/header";
-import Footer from "../components/layoutComponents/footer";
+import { createGlobalStyle } from 'styled-components';
+import Head from 'next/head';
+import Header from '../components/layoutComponents/header';
+import Footer from '../components/layoutComponents/footer';
 
 const GlobalStyle = createGlobalStyle`
 

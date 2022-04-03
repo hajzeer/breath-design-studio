@@ -1,6 +1,6 @@
 /** @format */
 
-import { keyframes } from "styled-components";
+import { keyframes } from 'styled-components';
 
 export const MoveOne = keyframes`
 0% {

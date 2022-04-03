@@ -1,6 +1,6 @@
 /** @format */
 
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const Container = styled.div`
   transition: all 0.2s ease-out;

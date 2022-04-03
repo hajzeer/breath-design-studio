@@ -1,8 +1,8 @@
 /** @format */
 
-import styled from "styled-components";
-import Image from "next/image";
-import { MoveOne, MoveTwo } from "../../utils/animations";
+import styled from 'styled-components';
+import Image from 'next/image';
+import { MoveOne, MoveTwo } from '../../utils/animations';
 
 const Container = styled.div`
   width: 100%;
@@ -91,10 +91,10 @@ const WelcomeComponents = () => {
   return (
     <Container>
       <ImageDivFirst>
-        <Image src='/GRADIENTS/1.png' width='2000' height='2000' />
+        <Image src="/GRADIENTS/1.png" width="2000" height="2000" />
       </ImageDivFirst>
       <ImageDivSecond>
-        <Image src='/GRADIENTS/2.png' width='2000' height='2000' />
+        <Image src="/GRADIENTS/2.png" width="2000" height="2000" />
       </ImageDivSecond>
       <InnerContainer>
         <TextContainer>

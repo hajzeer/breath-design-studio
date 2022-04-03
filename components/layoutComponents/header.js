@@ -1,10 +1,10 @@
 /** @format */
 
-import { useState } from "react";
-import styled from "styled-components";
-import Image from "next/image";
-import Link from "next/link";
-import NavBar from "./navBar";
+import { useState } from 'react';
+import styled from 'styled-components';
+import Image from 'next/image';
+import Link from 'next/link';
+import NavBar from './navBar';
 
 const Container = styled.header`
   width: 100%;
@@ -34,7 +34,6 @@ const BluredDiv = styled.div`
   margin: 0;
   padding: 0;
   z-index: 9999;
-
 `;
 
 const ImageContainer = styled.div`
@@ -46,7 +45,7 @@ const ImageContainer = styled.div`
 
   @media (min-width: 1024px) {
     width: 150px;
-  height: 150px;
+    height: 150px;
   }
 `;
 
@@ -76,12 +75,12 @@ const HamburgerSpan = styled.span`
   &::after {
     transition: all 0.4s ease-out;
 
-    content: "";
+    content: '';
     position: absolute;
     right: 0;
-    top: ${(props) => (props.active ? "50%" : "45%")};
+    top: ${(props) => (props.active ? '50%' : '45%')};
 
-    transform: ${(props) => (props.active ? "rotate(45deg)" : "rotate(0deg)")};
+    transform: ${(props) => (props.active ? 'rotate(45deg)' : 'rotate(0deg)')};
     width: 100%;
     height: 1px;
     background: #ffffff;
@@ -90,13 +89,13 @@ const HamburgerSpan = styled.span`
   &::before {
     transition: all 0.4s ease-out;
 
-    content: "";
+    content: '';
     position: absolute;
     right: 0;
-    bottom: ${(props) => (props.active ? "50%" : "45%")};
-    width: ${(props) => (props.active ? "100%" : "50%")};
+    bottom: ${(props) => (props.active ? '50%' : '45%')};
+    width: ${(props) => (props.active ? '100%' : '50%')};
     height: 1px;
-    transform: ${(props) => (props.active ? "rotate(315deg)" : "rotate(0deg)")};
+    transform: ${(props) => (props.active ? 'rotate(315deg)' : 'rotate(0deg)')};
 
     background: #ffffff;
   }
@@ -137,13 +136,13 @@ const Header = () => {
   return (
     <Container>
       <BluredDiv />
-      <Link href='/'>
+      <Link href="/">
         <ImageContainer>
           <Image
-            src='/logo/8.png'
-            width='300'
-            height='300'
-            layout='responsive'
+            src="/logo/8.png"
+            width="300"
+            height="300"
+            layout="responsive"
           />
         </ImageContainer>
       </Link>
@@ -151,23 +150,23 @@ const Header = () => {
         <HamburgerSpan active={isActive} />
       </HamburderContainer>
       <NavBarDiv>
-        <Link href='/about'>
-        <Anchor>O Nas</Anchor>
+        <Link href="/about">
+          <Anchor>O Nas</Anchor>
         </Link>
-        <Link href='/'>
-        <Anchor>Portfolio</Anchor>
+        <Link href="/">
+          <Anchor>Portfolio</Anchor>
         </Link>
-        <Link href='/'>
-        <Anchor>Blog</Anchor>
+        <Link href="/">
+          <Anchor>Blog</Anchor>
         </Link>
-        <Link href='/'>
-        <Anchor>Oferta</Anchor>
+        <Link href="/">
+          <Anchor>Oferta</Anchor>
         </Link>
-        <Link href='/'> 
-        <Anchor>Kontakt</Anchor>
+        <Link href="/">
+          <Anchor>Kontakt</Anchor>
         </Link>
       </NavBarDiv>
-      <NavBar open={isActive}/>
+      <NavBar open={isActive} />
     </Container>
   );
 };
