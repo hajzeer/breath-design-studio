@@ -77,112 +77,101 @@ export const data = {
 export const CustomerPOV = ['logo', 'kolorystyka', 'krój pisma', 'druki firmowe', 'księga znaku', 'opakowania produktów', 'social media', 'uniformy']
 
 export const People = [
+
   {
-    id: 0,
-    name: 'oliwia dittrich',
-    title: 'FOUNDER / CREATIVE DIRECTOR / GRAPHIC DESIGNER',
-    description: `Jestem założycielką BREATH DESIGN STUDIO, dyrektorem kreatywnym
-        oraz projektantem graficznym. Od dziecka jestem silnie związana z
-        szeroko pojętą sztuką. W swojej pracy kieruję się kreatywnością z
-        przemyślaną strategią oraz komercyjnym zamysłem.
-        Moim ulubionym momentem w pracy jest znalezienie oryginalnego i
-        nieszablonowego rozwiązania, które odwzoruje charakter firmy moich
-        klientów.
-        Zajmuję się kierownictwem artystycznym, projektowaniem zaskakujących
-        identyfikacji wizualnych marek. Moje projekty są nieoczywiste,
-        dopasowane do docelowej grupy odbiorców. Przykładam wielką uwagę
-        do innowacyjnych rozwiązań oraz dbałości o szczegóły.
-        Każdą wolną chwilę spędzam na czerpaniu inspiracji. Kiedy nie
-        projektuję, oddaję się tworzeniu obrazów, które dają mi możliwość
-        przelania na płótno swoich emocji.
-        Czerpię inspirację z otaczającej mnie natury, przechodniów oraz
-        otoczenia, w którym żyje.`,
-    image: '/zdjęcia/9.png',
-    active: false,
-  },
-  {
-    id: 1, 
+    id: 0, 
     name: 'mateusz dittrich',
     title: ' ',
-    description:`Wraz z moim mężem Mateuszem założyliśmy studio projektowe BREATH,
-    to on był głównym prowokatorem założenia marki. Przekonał mnie, że
-    marzenia trzeba realizować i dążyć do spełnienia wyznaczonych celów.
-    
-    Jaką rolę pełni Mateusz w naszym teamie?
-    zajmuje się dokumentacją firmy, kontaktami z kontrahentami oraz
-    drukarniami, z którymi współpracujemy.
-    
-    Jest wsparciem dla całego zespołu oraz zawsze służy dobrym żartem!`,
+    description:`Mateusz był głównym prowokatorem
+    założenia marki. Przekonał mnie, że
+    marzenia trzeba realizować i dążyć
+    do spełnienia wyznaczonych celów.
+    Jaką rolę pełni Mateusz w naszym
+    teamie?
+    zajmuje się dokumentacją firmy,
+    kontaktami z kontrahentami oraz
+    drukarniami, z którymi
+    współpracujemy.`,
     image:'/zdjęcia/11.png',
     active: true,
 
     
   },
   {
-    id: 2,
+    id: 1,
     name: 'krzysiu hajder',
     title: 'PROGRAMISTA / PROJEKTANT STRON www i aplikacji',
-    description: `tutaj napisz o sobie utaj napisz o sobieutaj napisz o sobieutaj napisz o
-    sobieutaj napisz o sobieutaj napisz o sobieutaj napisz o sobieutaj napisz
-    o sobieutaj napisz o sobieutaj napisz o sobieutaj napisz o sobieutaj
-    napisz o sobieutaj napisz o sobieutaj napisz o sobieutaj napisz o
-    sobieutaj napisz o sobieutaj napisz o sobieutaj napisz o sobieutaj napisz`,
+    description: `blablablalbalbl blablablalbalbl blablablalbalbl blablablalbalbl blablablalbalbl
+    blablablalbalblblablablalbalblbl
+    ablablalbalblblablablalbalbl
+    blablablalbalbl`,
     image:'/zdjęcia/27.png',
     active: true,
 
   },
   {
-    id: 3,
+    id: 2,
     name: 'aneta nowak',
     title: 'GRAPHIC DESIGNER',
-    description: `Hej. Jestem studentką grafiki komputerowej. W tym momencie specjalizuję się głównie w
-    grafice wektorowej - robię logotypy, ilustracje, a także projekty wizytówek, voucherów,
-    plakatów. Zajmuję się również digital paintingiem. Od dziecka lubię tworzyć.
-    Cały czas pracuję nad swoimi umiejętnościami i chcę się rozwijać
-    w różnych dziedzinach sztuki!`,
+    description: `Specjalizuję się głównie w grafice
+    wektorowej - robię logotypy,
+    ilustracje, a także projekty
+    wizytówek, voucherów, plakatów.
+    Zajmuję się również digital
+    paintingiem.`,
     image:'/zdjęcia/16.png',
     active: true,
 
   },
   {
-    id: 4,
+    id: 3,
     name: 'tomek kozuba',
     title: 'producent filmowy',
-    description: `Zajmuję się produkcją filmów skierowanych głównie na platformy social media oraz
-    YouTube. Tworzę w przekonaniu, że historie, które opowiadam mają zawierać w sobie nie
-    tylko walory estetyczne oraz jakość wykonania, ale przede wszystkim wartość sprzedażową
-    i komunikacyjną marki. Ta fuzja daje najlepsze rezultaty. I mam na to dowody!`,
+    description: `Zajmuję się produkcją filmów
+    skierowanych głównie na platformy
+    social media oraz YouTube. Tworzę w
+    przekonaniu, że historie, które
+    opowiadam mają zawierać w sobie
+    nie tylko walory estetyczne oraz
+    jakość wykonania, ale przede
+    wszystkim wartość sprzedażową i
+    komunikacyjną marki.`,
     image:'/zdjęcia/14.png',
     active: true,
 
   },
   {
-    id: 5,
+    id: 4,
     name: 'SALOMEA BARTOL',
     title: 'GRAPHIC DESIGNER',
-    description: `Grafiką zajmuję się praktycznie od dziecka, moja pierwsza styczność z programami
-    graficznymi była jeszcze w podstawówce. Skończyłam College plastyczny w Wielkiej
-    Brytanii, a w tej chwili jestem studentką grafiki tu w Polsce. Moją specjalizacją jest grafika
-    rastrowa, ilustracje wszelkiego rodzaju, projektowanie postaci, nadruków a także logotypów
-    i plakatów. Bardzo dobrze się czuję też w technikach tradycyjnych, żadne medium nie jest
-    mi obce. Przez wiele lat zajmowałam się rysowaniem ilustracji i digital paintingiem dla
-    klientów indywidualnych. Grafika jest moją największą pasją którą cały czas rozwijam i w
-    której staram się poszerzać swoje horyzonty, dlatego jestem otwarta na niekonwencjonalne
-    pomysły i rozwiązania!`,
+    description: `Moją specjalizacją jest grafika
+    rastrowa, ilustracje wszelkiego
+    rodzaju, projektowanie postaci,
+    nadruków a także logotypów i
+    plakatów. Bardzo dobrze się czuję
+    też w technikach tradycyjnych, żadne
+    medium nie jest mi obce.`,
     image:'/zdjęcia/21.png',
     active: true,
 
   },
   {
-    id: 6,
+    id: 5,
     name: 'ALEKSANDER GOLIS',
     title: 'prawnik',
-    description: `Cześć, jestem prawnikiem z krwi i kości, doktorantem na Uniwersytecie Śląskim i wielkim fanem
-    prawa cywilnego, energetycznego i ochrony środowiska oraz przyrody. W ramach swoich działań
-    w Breath Design Studio realizuję nadzór nad procesami prawnotwórczymi z zakresu praw
-    autorskich oraz szeroko pojętego prawa cywilnego w tym postępowań sprzedażowych,
-    regulaminów sklepów internetowych, regulacji działalności stron internetowych oraz wszelkich
-    kwestii podatkowych, finansowych obsługując również zakres prawa spółek handlowych.`,
+    description: `Cześć, jestem prawnikiem z krwi i
+    kości, doktorantem na Uniwersytecie
+    Śląskim. W ramach swoich działań w
+    Breath Design Studio realizuję nadzór
+    nad procesami prawnotwórczymi z
+    zakresu praw autorskich oraz prawa
+    cywilnego, postępowań
+    sprzedażowych, regulaminów sklepów
+    internetowych, regulacji działalności
+    stron internetowych oraz wszelkich
+    kwestii podatkowych, finansowych
+    obsługując również zakres prawa
+    spółek handlowych.`,
     image:'/zdjęcia/23.png',
     active: true,
 
