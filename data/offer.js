@@ -106,7 +106,7 @@ export const People = [
         name: 'krzysiu hajder',
         title: 'PROGRAMISTA STRON I APLIKACJI',
         description: `Cześć,
-        Programowaniem oraz tworzeniem aplikacji webowych zajmuję się od wielu lat. Wszystkie moje produkty charakteryzują się ty, że zostały przeze mnie napisane 
+        Programowaniem oraz tworzeniem aplikacji webowych zajmuję się od wielu lat. Wszystkie moje produkty charakteryzują się tym, że zostały przeze mnie napisane 
         bezpośrednio w kodzie z dopieszczeniem projektu graficznego. Nie uznaję słów "nie da się" więc czekam na wyzwania, które możecie przede mną podstać`,
         image: '/zdj/27.png',
         active: true,
