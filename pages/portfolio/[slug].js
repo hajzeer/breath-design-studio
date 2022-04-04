@@ -29,7 +29,7 @@ const ProjectsPage = ({items}) => {
         <Layout>
             <Container>
                 <ImageContainer>
-                    <Image src={items.visual} width={1000} height={6000} quality={100} priority/>
+                    <Image src={items.visual} width={1200} height={6000} quality={100} priority/>
                 </ImageContainer>
             </Container>
         </Layout>
