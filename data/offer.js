@@ -54,7 +54,7 @@ export const data = {
                 'Filmy produktowe',
                 'Reportaże reklamowe',
                 'Sesje produktowe',
-                'Filmyś na social media',
+                'Filmy na social media',
                 'Teledyski',
             ],
         },
