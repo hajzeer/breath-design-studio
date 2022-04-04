@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Image from 'next/image';
+import Link from "next/link";
 
 const Container = styled.div`
   width: 250px;
@@ -50,23 +51,26 @@ const Paragraph = styled.p`
   text-transform: uppercase;
 `;
 
-const NewestProjectsElements = ({ items }) => {
-  return (
-    <>
-      {items.map((item) => {
-        return (
-          <Container key={item.id}>
-            <DivHelper>
-              <Paragraph>{item.name}</Paragraph>
-            </DivHelper>
-            <ImageContainer>
-              <Image src={item.image} width={1000} height={1000} />
-            </ImageContainer>
-          </Container>
-        );
-      })}
-    </>
-  );
+const NewestProjectsElements = ({items}) => {
+    return (
+        <>
+            {items.map((item) => {
+                return (
+                    <Link key={item.id} href={`/portfolio/${item.slug}`}>
+                        <Container>
+                            <DivHelper>
+                                <Paragraph>{item.name}</Paragraph>
+                            </DivHelper>
+                            <ImageContainer>
+                                <Image src={item.image} width={1000} height={1000}/>
+                            </ImageContainer>
+                        </Container>
+                    </Link>
+
+                );
+            })}
+        </>
+    );
 };
 
 export default NewestProjectsElements;

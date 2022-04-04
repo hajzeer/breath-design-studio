@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Layout from '../layout/layout';
-import { Portfolio } from '../data/portfolio';
+import {Portfolio} from '../data/portfolio';
 import NewestProjectsElements from '../components/HomeComponents/NewestProjectsElements';
 
 const Container = styled.div`
@@ -36,15 +36,15 @@ const InnerContainer = styled.div`
 `;
 
 const PortfolioPage = () => {
-  return (
-    <Layout>
-      <Container>
-        <Subject>Portfolio</Subject>
-        <InnerContainer>
-          <NewestProjectsElements items={Portfolio} />
-        </InnerContainer>
-      </Container>
-    </Layout>
-  );
+    return (
+        <Layout>
+            <Container>
+                <Subject>Portfolio</Subject>
+                <InnerContainer>
+                    <NewestProjectsElements items={Portfolio}/>
+                </InnerContainer>
+            </Container>
+        </Layout>
+    );
 };
 export default PortfolioPage;
