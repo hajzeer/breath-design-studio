@@ -1,6 +1,7 @@
 /** @format */
 
 import styled from 'styled-components';
+import Link from 'next/link'
 import WelcomeComponents from '../components/HomeComponents/WelcomeComponents';
 import Layout from '../layout/layout';
 import OfferComponent from '../components/HomeComponents/OfferComponent';
@@ -197,7 +198,9 @@ export default function Home() {
                         <br/>
                         <span>Porozmawiajmy o potrzebach Twojej marki!</span>
                     </SecondParahraph>
-                    <ButtonStyled>Wycena bez zobowiązań</ButtonStyled>
+                    <Link href='/pricing'>
+                        <ButtonStyled>Wycena bez zobowiązań</ButtonStyled>
+                    </Link>
                 </CountingDiv>
             </Container>
         </Layout>
