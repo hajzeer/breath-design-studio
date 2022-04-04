@@ -12,10 +12,10 @@ const Container = styled.div`
   color: #fff;
 
   border: ${(props) =>
-    props.active ? '2px solid #120093' : '1px solid #ffffff'};
+          props.active ? '2px solid #120093' : '1px solid #ffffff'};
 
   @media (min-width: 1024px) {
-    height: 600;
+    font-weight: 600;
   }
 `;
 
@@ -29,7 +29,7 @@ const MainContainer = styled.div`
   margin: 100px 0;
   color: #fff;
   border: ${(props) =>
-    props.active ? '2px solid #120093' : '1px solid #ffffff'};
+          props.active ? '2px solid #120093' : '1px solid #ffffff'};
 
   @media (min-width: 1024px) {
     width: 95%;
@@ -114,66 +114,66 @@ const MainContentDiv = styled.div`
   }
 `;
 
-const TeamList = ({ items }) => {
-  return (
-    <>
-      <MainContainer active>
-        <MainContentDiv>
-          <ImageDiv>
-            <Image src="/zdj/9.png" width={500} height={500} />
-          </ImageDiv>
-          <TextContainer>
-            <Subject>oliwia dittrich</Subject>
-            <Paragraph>
-              <span>FOUNDER / CREATIVE DIRECTOR / GRAPHIC DESIGNER</span>
-            </Paragraph>
-            <Paragraph>
-              Jestem założycielką BREATH DESIGN STUDIO, dyrektorem kreatywnym
-              oraz projektantem graficznym. Od dziecka jestem silnie związana z
-              szeroko pojętą sztuką. W swojej pracy kieruję się kreatywnością z
-              przemyślaną strategią oraz komercyjnym zamysłem. Moim ulubionym
-              momentem w pracy jest znalezienie oryginalnego i nieszablonowego
-              rozwiązania, które odwzoruje charakter firmy moich klientów.
-              Zajmuję się kierownictwem artystycznym, projektowaniem
-              zaskakujących identyfikacji wizualnych marek. Moje projekty są
-              nieoczywiste, dopasowane do docelowej grupy odbiorców. Przykładam
-              wielką uwagę do innowacyjnych rozwiązań oraz dbałości o szczegóły.
-              Każdą wolną chwilę spędzam na czerpaniu inspiracji. Kiedy nie
-              projektuję, oddaję się tworzeniu obrazów, które dają mi możliwość
-              przelania na płótno swoich emocji. Czerpię inspirację z
-              otaczającej mnie natury, przechodniów oraz otoczenia, w którym
-              żyje.
-            </Paragraph>
-          </TextContainer>
-        </MainContentDiv>
-      </MainContainer>
+const TeamList = ({items}) => {
+    return (
+        <>
+            <MainContainer active>
+                <MainContentDiv>
+                    <ImageDiv>
+                        <Image src="/zdj/9.png" width={500} height={500} priority/>
+                    </ImageDiv>
+                    <TextContainer>
+                        <Subject>oliwia dittrich</Subject>
+                        <Paragraph>
+                            <span>FOUNDER / CREATIVE DIRECTOR / GRAPHIC DESIGNER</span>
+                        </Paragraph>
+                        <Paragraph>
+                            Jestem założycielką BREATH DESIGN STUDIO, dyrektorem kreatywnym
+                            oraz projektantem graficznym. Od dziecka jestem silnie związana z
+                            szeroko pojętą sztuką. W swojej pracy kieruję się kreatywnością z
+                            przemyślaną strategią oraz komercyjnym zamysłem. Moim ulubionym
+                            momentem w pracy jest znalezienie oryginalnego i nieszablonowego
+                            rozwiązania, które odwzoruje charakter firmy moich klientów.
+                            Zajmuję się kierownictwem artystycznym, projektowaniem
+                            zaskakujących identyfikacji wizualnych marek. Moje projekty są
+                            nieoczywiste, dopasowane do docelowej grupy odbiorców. Przykładam
+                            wielką uwagę do innowacyjnych rozwiązań oraz dbałości o szczegóły.
+                            Każdą wolną chwilę spędzam na czerpaniu inspiracji. Kiedy nie
+                            projektuję, oddaję się tworzeniu obrazów, które dają mi możliwość
+                            przelania na płótno swoich emocji. Czerpię inspirację z
+                            otaczającej mnie natury, przechodniów oraz otoczenia, w którym
+                            żyje.
+                        </Paragraph>
+                    </TextContainer>
+                </MainContentDiv>
+            </MainContainer>
 
-      {items.map((item) => {
-        return (
-          <Container key={item.id}>
-            <ContentDiv>
-              <ImageDiv>
-                <Image src={item.image} width={500} height={500} />
-              </ImageDiv>
-              <TextContainer>
-                <Subject>{item.name}</Subject>
-                <Paragraph>
-                  <span>{item.title}</span>
-                </Paragraph>
-              </TextContainer>
-            </ContentDiv>
-            <InfoContainer>
-              <Subject>{item.name}</Subject>
-              <Paragraph>
-                <span>{item.title}</span>
-              </Paragraph>
-              <Paragraph>{item.description}</Paragraph>
-            </InfoContainer>
-          </Container>
-        );
-      })}
-    </>
-  );
+            {items.map((item) => {
+                return (
+                    <Container key={item.id}>
+                        <ContentDiv>
+                            <ImageDiv>
+                                <Image src={item.image} width={500} height={500}/>
+                            </ImageDiv>
+                            <TextContainer>
+                                <Subject>{item.name}</Subject>
+                                <Paragraph>
+                                    <span>{item.title}</span>
+                                </Paragraph>
+                            </TextContainer>
+                        </ContentDiv>
+                        <InfoContainer>
+                            <Subject>{item.name}</Subject>
+                            <Paragraph>
+                                <span>{item.title}</span>
+                            </Paragraph>
+                            <Paragraph>{item.description}</Paragraph>
+                        </InfoContainer>
+                    </Container>
+                );
+            })}
+        </>
+    );
 };
 
 export default TeamList;
