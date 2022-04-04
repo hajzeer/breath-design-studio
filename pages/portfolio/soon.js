@@ -23,4 +23,4 @@ const Soon = () => {
     )
 }
 
-export default Soonśś
+export default Soon
