@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Layout from "../../layout/layout";
+import Layout from "../layout/layout";
 
 const Container = styled.div`
   width: 100%;
@@ -11,16 +11,23 @@ const Container = styled.div`
   align-items: center;
 `;
 
+const Subject = styled.h2`
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+`
+
 const Soon = () => {
     return (
         <Layout>
             <Container>
-                <h2>
+                <Subject>
                     Jesteśmy w trakcie tworzenia ciekawych artykułów dla Was!
-                </h2>
+                </Subject>
             </Container>
         </Layout>
     )
 }
 
-export default Soon
+export default Soon;
