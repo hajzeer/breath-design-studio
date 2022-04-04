@@ -38,7 +38,7 @@ const Subject = styled.h2`
   letter-spacing: 2px;
   justify-self: flex-start;
 `;
-const Paragraph = styled.p`
+const ListItem = styled.li`
   margin: 20px;
 `;
 
@@ -49,22 +49,22 @@ const TextContainer = styled.div`
   justify-self: flex-end;
 `;
 
-const OfferItems = ({ items }) => {
-  return (
-    <>
-      {items.map((item) => {
-        return (
-          <Container key={item.id}>
-            <Subject>{item.title}</Subject>
-            <TextContainer>
-              {item.description.map((desc, index) => {
-                return <Paragraph key={index}>{desc}</Paragraph>;
-              })}
-            </TextContainer>
-          </Container>
-        );
-      })}
-    </>
-  );
+const OfferItems = ({items}) => {
+    return (
+        <>
+            {items.map((item) => {
+                return (
+                    <Container key={item.id}>
+                        <Subject>{item.title}</Subject>
+                        <TextContainer>
+                            {item.description.map((desc, index) => {
+                                return (<ul key={index}><ListItem>{desc}</ListItem></ul>);
+                            })}
+                        </TextContainer>
+                    </Container>
+                );
+            })}
+        </>
+    );
 };
 export default OfferItems;

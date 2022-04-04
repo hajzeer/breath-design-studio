@@ -1,6 +1,6 @@
 /** @format */
 
-import { useState } from 'react';
+import {useState} from 'react';
 import styled from 'styled-components';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -72,6 +72,7 @@ const HamburgerSpan = styled.span`
   width: 40px;
   height: 50px;
   position: absolute;
+
   &::after {
     transition: all 0.4s ease-out;
 
@@ -130,50 +131,50 @@ const Anchor = styled.a`
 `;
 
 const Header = () => {
-  const [isActive, setIsActive] = useState(false);
+    const [isActive, setIsActive] = useState(false);
 
-  const handleClick = () => {
-    if (isActive === false) {
-      setIsActive(true);
-    } else setIsActive(false);
-  };
+    const handleClick = () => {
+        if (isActive === false) {
+            setIsActive(true);
+        } else setIsActive(false);
+    };
 
-  return (
-    <Container>
-      <BluredDiv />
-      <Link href="/">
-        <ImageContainer>
-          <Image
-            src="/logo/8.png"
-            width="300"
-            height="300"
-            layout="responsive"
-          />
-        </ImageContainer>
-      </Link>
-      <HamburderContainer onClick={handleClick}>
-        <HamburgerSpan active={isActive} />
-      </HamburderContainer>
-      <NavBarDiv>
-        <Link href="/about">
-          <Anchor>O Nas</Anchor>
-        </Link>
-        <Link href="/portfolio">
-          <Anchor>Portfolio</Anchor>
-        </Link>
-        <Link href="/">
-          <Anchor>Blog</Anchor>
-        </Link>
-        <Link href="/">
-          <Anchor>Oferta</Anchor>
-        </Link>
-        <Link href="/#contact">
-          <Anchor>Kontakt</Anchor>
-        </Link>
-      </NavBarDiv>
-      <NavBar open={isActive} unActive={handleClick} />
-    </Container>
-  );
+    return (
+        <Container>
+            <BluredDiv/>
+            <Link href="/">
+                <ImageContainer>
+                    <Image
+                        src="/logo/8.png"
+                        width="300"
+                        height="300"
+                        layout="responsive"
+                    />
+                </ImageContainer>
+            </Link>
+            <HamburderContainer onClick={handleClick}>
+                <HamburgerSpan active={isActive}/>
+            </HamburderContainer>
+            <NavBarDiv>
+                <Link href="/about">
+                    <Anchor>O Nas</Anchor>
+                </Link>
+                <Link href="/portfolio">
+                    <Anchor>Portfolio</Anchor>
+                </Link>
+                <Link href="/soon">
+                    <Anchor>Blog</Anchor>
+                </Link>
+                <Link href="/#offer">
+                    <Anchor>Oferta</Anchor>
+                </Link>
+                <Link href="/#contact">
+                    <Anchor>Kontakt</Anchor>
+                </Link>
+            </NavBarDiv>
+            <NavBar open={isActive} unActive={handleClick}/>
+        </Container>
+    );
 };
 
 export default Header;

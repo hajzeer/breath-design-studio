@@ -2,7 +2,7 @@
 
 import styled from 'styled-components';
 import Image from 'next/image';
-import { MoveOne, MoveTwo } from '../../utils/animations';
+import {MoveOne, MoveTwo} from '../../utils/animations';
 
 const Container = styled.div`
   width: 100%;
@@ -48,8 +48,8 @@ const Paragraph = styled.p`
   }
 
   @media (min-width: 1024px) {
-    width: 50%;
-    font-size: 20px;
+    width: 55%;
+    font-size: 25px;
   }
 `;
 
@@ -88,32 +88,32 @@ const ImageDivSecond = styled.div`
 `;
 
 const WelcomeComponents = () => {
-  return (
-    <Container>
-      <ImageDivFirst>
-        <Image src="/GRADIENTS/1.png" width="2000" height="2000" />
-      </ImageDivFirst>
-      <ImageDivSecond>
-        <Image src="/GRADIENTS/2.png" width="2000" height="2000" />
-      </ImageDivSecond>
-      <InnerContainer>
-        <TextContainer>
-          <Subject>Cześć!</Subject>
-          <Paragraph>
-            WEŹ GŁĘBOKI ODDECH...
-            <br />
-            <br />
-            Jesteśmy studium brandingowym. Naszą specjalizacją jest
-            <span> identyfikacja wizualna</span> Każda marka ma do opowiedzenia
-            historię. Niezależnie czy jest to historia doświadczenia na rynku,
-            wyjątkowości oferowanych produktów lub usług. <br />
-            Jaka jest Twoja historia?
-            <br /> <span> CHĘTNIE JĄ ZIDENTYFIKUJEMY.</span>
-          </Paragraph>
-        </TextContainer>
-      </InnerContainer>
-    </Container>
-  );
+    return (
+        <Container>
+            <ImageDivFirst>
+                <Image src="/GRADIENTS/1.png" width="2000" height="2000"/>
+            </ImageDivFirst>
+            <ImageDivSecond>
+                <Image src="/GRADIENTS/2.png" width="2000" height="2000"/>
+            </ImageDivSecond>
+            <InnerContainer>
+                <TextContainer>
+                    <Subject>Cześć!</Subject>
+                    <Paragraph>
+                        WEŹ GŁĘBOKI ODDECH...
+                        <br/>
+                        <br/>
+                        Jesteśmy studiem brandingowym. Naszą specjalizacją jest
+                        <span> identyfikacja wizualna</span> Każda marka ma do opowiedzenia
+                        historię. Niezależnie czy jest to historia doświadczenia na rynku,
+                        wyjątkowości oferowanych produktów lub usług. <br/>
+                        Jaka jest Twoja historia?
+                        <br/> <br/> <span> CHĘTNIE JĄ ZIDENTYFIKUJEMY.</span>
+                    </Paragraph>
+                </TextContainer>
+            </InnerContainer>
+        </Container>
+    );
 };
 
 export default WelcomeComponents;

@@ -8,7 +8,7 @@ const Container = styled.div`
   z-index: 999;
   top: 0;
   left: 0;
-  transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(100%)')};
+  transform: ${({open}) => (open ? 'translateX(0)' : 'translateX(100%)')};
   background: #000000;
   transition: all 0.4s ease-out;
 
@@ -39,27 +39,27 @@ const InnerContainer = styled.div`
   align-items: center;
 `;
 
-const navBar = ({ open, unActive }) => {
-  return (
-    <Container open={open}>
-      <InnerContainer>
-        <Link href="/about">
-          <Anchor onClick={unActive}>O Nas</Anchor>
-        </Link>
-        <Link href="/portfolio">
-          <Anchor onClick={unActive}>Portfolio</Anchor>
-        </Link>
-        <Link href="/">
-          <Anchor onClick={unActive}>Blog</Anchor>
-        </Link>
-        <Link href="/">
-          <Anchor onClick={unActive}>Oferta</Anchor>
-        </Link>
-        <Link href="/#contact">
-          <Anchor onClick={unActive}>Kontakt</Anchor>
-        </Link>
-      </InnerContainer>
-    </Container>
-  );
+const navBar = ({open, unActive}) => {
+    return (
+        <Container open={open}>
+            <InnerContainer>
+                <Link href="/about">
+                    <Anchor onClick={unActive}>O Nas</Anchor>
+                </Link>
+                <Link href="/portfolio">
+                    <Anchor onClick={unActive}>Portfolio</Anchor>
+                </Link>
+                <Link href="/soon">
+                    <Anchor onClick={unActive}>Blog</Anchor>
+                </Link>
+                <Link href="/#offer">
+                    <Anchor onClick={unActive}>Oferta</Anchor>
+                </Link>
+                <Link href="/#contact">
+                    <Anchor onClick={unActive}>Kontakt</Anchor>
+                </Link>
+            </InnerContainer>
+        </Container>
+    );
 };
 export default navBar;

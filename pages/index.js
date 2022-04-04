@@ -5,7 +5,7 @@ import WelcomeComponents from '../components/HomeComponents/WelcomeComponents';
 import Layout from '../layout/layout';
 import OfferComponent from '../components/HomeComponents/OfferComponent';
 import Image from 'next/image';
-import { MoveOne, MoveTwo } from '../utils/animations';
+import {MoveOne, MoveTwo} from '../utils/animations';
 import NewestProjects from '../components/HomeComponents/NewestProjects';
 
 const Container = styled.div`
@@ -78,11 +78,10 @@ const SecondParahraph = styled.p`
   }
 
   @media (min-width: 1024px) {
-    margin: 50px 40px;
+    margin: 50px 80px;
 
     width: 50%;
-    font-weight: 18px;
-    margin: 100px 20px;
+    font-size: 18px;
   }
 `;
 
@@ -111,6 +110,7 @@ const ButtonStyled = styled.button`
 
   @media (min-width: 1024px) {
     left: 75%;
+    top: -100px;
     width: 280px;
     height: 60px;
     font-size: 18px;
@@ -165,41 +165,41 @@ const CountingDiv = styled.div`
 `;
 
 export default function Home() {
-  return (
-    <Layout>
-      <Container>
-        <WelcomeComponents />
-        <Paragraph>
-          Projektujemy i tworzymy identyfikacje wizualne, strony internetowe,
-          <br />
-          grafikę użytkowa, produkcje filmowe i wiele innych...
-        </Paragraph>
-        <OfferComponent />
-        <NewestProjects />
-        <CountingDiv>
-          <TextContainer>
-            <Subject>SZUKASZ WYJĄTKOWEGO PROJEKTU?</Subject>
-          </TextContainer>
-          <ImageDivFirst>
-            <Image src="/GRADIENTS/5.png" width="2000" height="2000" />
-          </ImageDivFirst>
-          <ImageDivSecond>
-            <Image src="/GRADIENTS/6.png" width="2000" height="2000" priority />
-          </ImageDivSecond>
-          <SecondParahraph>
-            Nie wiesz jak nadać charakter swojej marce? A może masz w głowie
-            pomysł, ale nie wiesz jak zacząć i szukasz ciekawych rozwiązań?
-            <br />
-            <br />
-            Pomożemy Ci w tym! Krok po kroku, stworzymy indywidualny projekt
-            szyty na miarę na potrzeby Twojej firmy.
-            <br />
-            <br />
-            <span>Porozmawiajmy o potrzebach Twojej marki!</span>
-          </SecondParahraph>
-          <ButtonStyled>Wycena bez zobowiązań</ButtonStyled>
-        </CountingDiv>
-      </Container>
-    </Layout>
-  );
+    return (
+        <Layout>
+            <Container>
+                <WelcomeComponents/>
+                <Paragraph>
+                    Projektujemy i tworzymy identyfikacje wizualne, strony internetowe,
+                    <br/>
+                    grafikę użytkowa, produkcje filmowe i wiele innych...
+                </Paragraph>
+                <OfferComponent/>
+                <NewestProjects/>
+                <CountingDiv>
+                    <TextContainer>
+                        <Subject>SZUKASZ WYJĄTKOWEGO PROJEKTU?</Subject>
+                    </TextContainer>
+                    <ImageDivFirst>
+                        <Image src="/GRADIENTS/5.png" width="2000" height="2000"/>
+                    </ImageDivFirst>
+                    <ImageDivSecond>
+                        <Image src="/GRADIENTS/6.png" width="2000" height="2000" priority/>
+                    </ImageDivSecond>
+                    <SecondParahraph>
+                        Nie wiesz jak nadać charakter swojej marce? A może masz w głowie
+                        pomysł, ale nie wiesz jak zacząć i szukasz ciekawych rozwiązań?
+                        <br/>
+                        <br/>
+                        Pomożemy Ci w tym! Krok po kroku, stworzymy indywidualny projekt
+                        szyty na miarę na potrzeby Twojej firmy.
+                        <br/>
+                        <br/>
+                        <span>Porozmawiajmy o potrzebach Twojej marki!</span>
+                    </SecondParahraph>
+                    <ButtonStyled>Wycena bez zobowiązań</ButtonStyled>
+                </CountingDiv>
+            </Container>
+        </Layout>
+    );
 }

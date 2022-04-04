@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import TeamList from '../AboutComponents/teamList';
-import { People } from '../../data/offer';
+import {People} from '../../data/offer';
 
 const Container = styled.div`
   width: 100%;
@@ -11,16 +11,34 @@ const Container = styled.div`
 
   position: relative;
 
-  &::before {
-    content: '';
-    position: absolute;
-    width: 50%;
-    height: 1px;
-    left: 0;
-    top: -25px;
-    background: #ffffff;
-  }
+
 `;
+
+const DivHelperOne = styled.div`
+
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  top: -25px;
+  background: #ffffff;
+
+`
+const DivHelperTwo = styled.div`
+
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  left: 0;
+  top: 70px;
+  background: #ffffff;
+
+  @media (min-width: 1024px) {
+    top: 120px;
+
+  }
+
+`
 
 const InnerContainer = styled.div`
   width: 100%;
@@ -44,25 +62,26 @@ const Subject = styled.h2`
   width: 100%;
   align-self: flex-start;
   color: #ffffff;
-  font-size: 25px;
+  font-size: 30px;
   margin: 0 20px;
 
   @media (min-width: 1024px) {
-    font-size: 50px;
-    margin: 0 45px;
+    font-size: 55px;
+    margin: 20px 60px;
   }
 `;
 
 const TeamComponent = () => {
-  return (
-    <Container>
-      <Subject>poznaj nas</Subject>
-
-      <InnerContainer>
-        <TeamList items={People} />
-      </InnerContainer>
-    </Container>
-  );
+    return (
+        <Container>
+            <DivHelperOne/>
+            <Subject>poznaj nas</Subject>
+            <DivHelperTwo/>
+            <InnerContainer>
+                <TeamList items={People}/>
+            </InnerContainer>
+        </Container>
+    );
 };
 
 export default TeamComponent;

@@ -1,14 +1,20 @@
 /** @format */
 
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import Image from 'next/image';
-import { MoveOne } from '../../utils/animations';
+import {MoveOne} from '../../utils/animations';
+
 const Container = styled.div`
   position: relative;
   bottom: 0;
   width: 100%;
   height: auto;
-  padding: 150px 0;
+  padding: 150px 0 150px 0;
+
+  @media (min-width: 1024px) {
+    padding: 0 0 150px 0;
+
+  }
 `;
 
 const TextContainer = styled.div`
@@ -130,60 +136,62 @@ const ImageDiv = styled.div`
   @media (min-width: 1024px) {
     width: 1000px;
     height: 1000px;
-    top: -250px;
+    top: -200px;
     left: -250px;
   }
 `;
 
 const Footer = () => {
-  return (
-    <Container id="contact">
-      <ImageDiv>
-        <Image src="/GRADIENTS/7.png" width="2000" height="2000" />
-      </ImageDiv>
-      <TextContainer>
-        <Subject>
-          SKONTAKTUJ SIĘ <br /> Z NAMI
-        </Subject>
-        <Paragraph>Pomagamy małym i dużym firmom.</Paragraph>
-      </TextContainer>
-      <ContentContainer>
-        <ContactContainer>
-          <Anchor href="mailto:breath.design.studio@gmail.com">
-            breath.design.studio@gmail.com
-          </Anchor>
-          <Anchor href="tel:+48-538-324-858">(+48) 538 324 858</Anchor>
-        </ContactContainer>
-        <SocialMediaContainer>
-          <SocialMediaAnchor
-            href="https://www.instagram.com/breath.d.s/"
-            target="_blank">
-            <Image src="/icons/10.png" width="40" height="40" />
-          </SocialMediaAnchor>
-          <SocialMediaAnchor
-            href="https://www.facebook.com/breathdesignstudio"
-            target="_blank">
-            <Image src="/icons/11.png" width="40" height="40" />
-          </SocialMediaAnchor>
-          <SocialMediaAnchor
-            href="https://pl.pinterest.com/Breathdesignstudio"
-            target="_blank">
-            <Image src="/icons/12.png" width="40" height="40" />
-          </SocialMediaAnchor>
-          <SocialMediaAnchor
-            href="https://www.behance.net/oliwiagolis"
-            target="_blank">
-            <Image src="/icons/13.png" width="40" height="40" />
-          </SocialMediaAnchor>
-          <SocialMediaAnchor
-            href="https://www.linkedin.com/in/oliwia-dittrich-a4214b228"
-            target="_blank">
-            <Image src="/icons/14.png" width="40" height="40" />
-          </SocialMediaAnchor>
-        </SocialMediaContainer>
-      </ContentContainer>
-    </Container>
-  );
+    return (
+        <Container id="contact">
+            <ImageDiv>
+                <Image src="/GRADIENTS/7.png" width="2000" height="2000"/>
+            </ImageDiv>
+            <TextContainer>
+                <Subject>
+                    SKONTAKTUJ SIĘ <br/> Z NAMI
+                </Subject>
+                <Paragraph>Pomagamy małym i dużym firmom.</Paragraph>
+            </TextContainer>
+            <ContentContainer>
+                <ContactContainer>
+                    <Anchor href="mailto:breath.design.studio@gmail.com">
+                        breath.design.studio@gmail.com
+                    </Anchor>
+                    <Anchor href="tel:+48-538-324-858">(+48) 538 324 858</Anchor>
+                </ContactContainer>
+                <SocialMediaContainer>
+                    <SocialMediaAnchor
+                        href="https://www.instagram.com/breath.d.s/"
+                        target="_blank">
+                        <Image src="/icons/10.png" width="40" height="40"/>
+                    </SocialMediaAnchor>
+                    <SocialMediaAnchor
+                        href="https://www.facebook.com/breathdesignstudio"
+                        target="_blank">
+                        <Image src="/icons/11.png" width="40" height="40"/>
+                    </SocialMediaAnchor>
+                    <SocialMediaAnchor
+                        href="https://pl.pinterest.com/Breathdesignstudio"
+                        target="_blank">
+                        <Image src="/icons/12.png" width="40" height="40"/>
+                    </SocialMediaAnchor>
+                    <SocialMediaAnchor
+                        href="https://www.behance.net/oliwiagolis"
+                        target="_blank">
+                        <Image src="/icons/13.png" width="40" height="40"/>
+                    </SocialMediaAnchor>
+                    <SocialMediaAnchor
+                        href="https://www.linkedin.com/in/oliwia-dittrich-a4214b228"
+                        target="_blank">
+                        <Image src="/icons/14.png" width="40" height="40"/>
+                    </SocialMediaAnchor>
+                </SocialMediaContainer>
+            </ContentContainer>
+            <Paragraph>@{new Date().getFullYear()} Wszelkie prawa zastrzeżone <br/> BREATH DESIGN STUDIO by Krzysztof
+                Hajder & Oliwia Dittrich</Paragraph>
+        </Container>
+    );
 };
 
 export default Footer;

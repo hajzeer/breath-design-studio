@@ -8,14 +8,25 @@ const Container = styled.div`
   margin: 20px 10px;
   position: relative;
   cursor: pointer;
+
+  @media (min-width: 1024px) {
+    width: 500px;
+    height: 500px;
+
+  }
 `;
 
 const ImageContainer = styled.div`
   width: 250px;
   height: 250px;
-  height: auto;
   padding: 0;
   z-index: -1;
+
+  @media (min-width: 1024px) {
+    width: 500px;
+    height: 500px;
+
+  }
 `;
 
 const DivHelper = styled.div`

@@ -1,8 +1,8 @@
 import Layout from '../layout/layout';
 import styled from 'styled-components';
 import Image from 'next/image';
-import { MoveOne } from '../utils/animations';
-import { CustomerPOV } from '../data/offer';
+import {MoveOne} from '../utils/animations';
+import {CustomerPOV} from '../data/offer';
 import TeamComponent from '../components/AboutComponents/teamComponent';
 
 const Container = styled.div`
@@ -57,7 +57,7 @@ const Paragraph = styled.p`
   }
 
   @media (min-width: 1024px) {
-    margin: ${({ margin }) => (margin ? '40px 20px' : '20px 60px')};
+    margin: ${({margin}) => (margin ? '40px 20px' : '20px 60px')};
     width: ${(props) => (props.short ? '50%' : 'none')};
   }
 `;
@@ -102,19 +102,13 @@ const SecondSubject = styled.h2`
 const BrandContainer = styled.div`
   width: 100%;
   height: auto;
-  padding: 40px 0;
+  margin: 80px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  @media (min-width: 1024px) {
-    top: -100px;
-    position: relative;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
+
 `;
 
 const ImageDivFirst = styled.div`
@@ -163,12 +157,17 @@ const TextContainer = styled.div`
 
 const ListParagraph = styled.p`
   width: 200px;
+  height: 40px;
   color: #ffffff;
   border: 1px solid #ffffff;
   padding: 20px;
   text-align: center;
   text-transform: uppercase;
   transition: all 0.2s ease-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   &:hover {
     background: #ffffff;
@@ -184,6 +183,14 @@ const ListContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+
+  @media (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    justify-items: center;
+  }
 `;
 
 const FinishDiv = styled.div`
@@ -238,79 +245,67 @@ const SecondFinishParagraph = styled.p`
 `;
 
 const About = () => {
-  return (
-    <Layout>
-      <Container>
-        <InnerContainer align>
-          <Subject>Dlaczego my?</Subject>
-          <DivHelper />
-          <Paragraph margin>
-            SKUPIAMY UWAGĘ NA TWOJEJ MARCE <br />
-            <br /> Od analizy marki, poprzez strategię komunikacji wizualnej po
-            wdrożenie w postaci identyfikacji wizualnej Twojej marki. <br />
-            <br /> Na każdym etapie procesu kreowania wizerunku marki, dokładamy
-            wszelkich starań by efekt finalny czyli zobrazowanie wyjątkowości
-            Twojej historii doskonale odzwierciedlało komunikaty, które muszą
-            być przekazane odbiorcy. <br />
-            <br />
-            <span> Wszystko po to, by wyróżnić Twoją markę na tle innych.</span>
-          </Paragraph>
-        </InnerContainer>
-        <ButtonStyled>
-          Niezobowiązująca wycena
-          <br /> twojego projektu
-        </ButtonStyled>
-        <ImageDivFirst>
-          <Image src="/GRADIENTS/1.png" width="2000" height="2000" />
-        </ImageDivFirst>
-        <SecondSubject>skupiamy uwagę na twojej marce</SecondSubject>
-        <Paragraph short>
-          Twoi klienci „kupują wzrokiem”. Zaintrygowani nietypowymi
-          rozwiązaniami, mogą zapamiętać właśnie Twoją markę. Tak jak oni
-          przywiązujemy ogromną wagę do detalu. To on często decyduje o
-          percepcji całej marki.
-        </Paragraph>
-        <Paragraph>
-          <span>Każdy projekt jest dla nas najważniejszy!</span>
-        </Paragraph>
-        <BrandContainer>
-          <TextContainer>
-            <ThirdSubject>
-              Przykładowe punkty styku klienta z twoją marką
-            </ThirdSubject>
-            <Paragraph>
-              Twoi klienci spotykają się z twoją marką w różnych miejscach.
-              otrzymując twoją wizytówkę, ulotkę, kartę twojego produktu,
-              wchodząc na twoją stronę internetową czy widząc na mieście twój
-              oznakowany samochód firmowy.
-            </Paragraph>
-            <Paragraph>
-              Musisz bezwzględnie zadbać by wymienione elementy ze sobą
-              współgrały tworząc w oczach Twoich klientów jedną opowieść, którą
-              chcą obserwować i angażować się w jej działania, kupując Twoje
-              produkty lub usługi.
-            </Paragraph>
-          </TextContainer>
-          <ListContainer>
-            {CustomerPOV.map((item, index) => {
-              return <ListParagraph key={index}>{item}</ListParagraph>;
-            })}
-          </ListContainer>
-        </BrandContainer>
-        <TeamComponent />
-        <FinishDiv>
-          <FirstFinishParagraph>
-            NASZĄ SPECJALIZACJĄ JEST KOMPLEKSOWA I PROFESJONALNA OBSŁUGA TWOJEJ
-            FIRMY.
-          </FirstFinishParagraph>
-          <SecondFinishParagraph>
-            Naszą siłą jest zespół. Wspólnymi siłami dokładamy wszelkich starań,
-            aby pomóc Twojej firmie rozwinąć skrzydła na wielu płaszczyznach.
-          </SecondFinishParagraph>
-        </FinishDiv>
-      </Container>
-    </Layout>
-  );
+    return (
+        <Layout>
+            <Container>
+                <InnerContainer align>
+                    <Subject>Dlaczego my?</Subject>
+                    <DivHelper/>
+                    <Paragraph margin>
+                        SKUPIAMY UWAGĘ NA TWOJEJ MARCE <br/>
+                        <br/> Od analizy marki, poprzez strategię komunikacji wizualnej po
+                        wdrożenie w postaci identyfikacji wizualnej Twojej marki. <br/>
+                        <br/> Na każdym etapie procesu kreowania wizerunku marki, dokładamy
+                        wszelkich starań by efekt finalny czyli zobrazowanie wyjątkowości
+                        Twojej historii doskonale odzwierciedlało komunikaty, które muszą
+                        być przekazane odbiorcy. <br/>
+                        <br/>
+                        <span> Wszystko po to, by wyróżnić Twoją markę na tle innych.</span>
+                    </Paragraph>
+                </InnerContainer>
+                <ButtonStyled>
+                    Niezobowiązująca wycena
+                    <br/> twojego projektu
+                </ButtonStyled>
+                <ImageDivFirst>
+                    <Image src="/GRADIENTS/1.png" width="2000" height="2000"/>
+                </ImageDivFirst>
+                <SecondSubject>skupiamy uwagę na twojej marce</SecondSubject>
+                <Paragraph short>
+                    Twoi klienci „kupują wzrokiem”. Zaintrygowani nietypowymi
+                    rozwiązaniami, mogą zapamiętać właśnie Twoją markę. Tak jak oni
+                    przywiązujemy ogromną wagę do detalu. To on często decyduje o
+                    percepcji całej marki.
+                </Paragraph>
+                <Paragraph>
+                    <span>Każdy projekt jest dla nas najważniejszy!</span>
+                </Paragraph>
+                <BrandContainer>
+                    <TextContainer>
+                        <ThirdSubject>
+                            Przykładowe punkty styku klienta z twoją marką
+                        </ThirdSubject>
+                    </TextContainer>
+                    <ListContainer>
+                        {CustomerPOV.map((item, index) => {
+                            return <ListParagraph key={index}>{item}</ListParagraph>;
+                        })}
+                    </ListContainer>
+                </BrandContainer>
+                <TeamComponent/>
+                <FinishDiv>
+                    <FirstFinishParagraph>
+                        NASZĄ SPECJALIZACJĄ JEST KOMPLEKSOWA I PROFESJONALNA OBSŁUGA TWOJEJ
+                        FIRMY.
+                    </FirstFinishParagraph>
+                    <SecondFinishParagraph>
+                        Naszą siłą jest zespół. Wspólnymi siłami dokładamy wszelkich starań,
+                        aby pomóc Twojej firmie rozwinąć skrzydła na wielu płaszczyznach.
+                    </SecondFinishParagraph>
+                </FinishDiv>
+            </Container>
+        </Layout>
+    );
 };
 
 export default About;

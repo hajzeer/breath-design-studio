@@ -1,7 +1,7 @@
-import { useRef, useEffect, useState } from 'react';
+import {useRef, useState} from 'react';
 import styled from 'styled-components';
 import NewestProjectsElements from './NewestProjectsElements';
-import { Portfolio } from '../../data/portfolio';
+import {Portfolio} from '../../data/portfolio';
 
 const Container = styled.div`
   width: 100%;
@@ -35,18 +35,24 @@ const Container = styled.div`
 
 const InnerContainer = styled.div`
   width: 100%;
-  height: 250px;
+  height: 300px;
   display: flex;
   justify-content: flex-start;
   overflow-y: hidden;
   overflow-x: auto;
   cursor: grab;
+
   &::-webkit-scrollbar {
     display: none;
   }
 
   .active {
     transform: scale(1);
+  }
+
+  @media (min-width: 1024px) {
+    height: 500px;
+
   }
 `;
 
@@ -67,52 +73,52 @@ const Subject = styled.h2`
 `;
 
 const NewestProjects = () => {
-  const [isDown, setIsDown] = useState(true);
-  const [startX, setStartX] = useState(null);
-  const [scrollLeft, setScrollLeft] = useState(null);
-  let slider = useRef();
+    const [isDown, setIsDown] = useState(true);
+    const [startX, setStartX] = useState(null);
+    const [scrollLeft, setScrollLeft] = useState(null);
+    let slider = useRef();
 
-  const mouseDown = (e) => {
-    slider.classList.add('active');
-    setIsDown(true);
-    let start = e.pageX - slider.offsetLeft;
-    setStartX(start);
-    let left = slider.scrollLeft;
-    setScrollLeft(left);
-  };
+    const mouseDown = (e) => {
+        slider.classList.add('active');
+        setIsDown(true);
+        let start = e.pageX - slider.offsetLeft;
+        setStartX(start);
+        let left = slider.scrollLeft;
+        setScrollLeft(left);
+    };
 
-  const mouseLeave = () => {
-    setIsDown(false);
+    const mouseLeave = () => {
+        setIsDown(false);
 
-    slider.classList.remove('active');
-  };
+        slider.classList.remove('active');
+    };
 
-  const mouseUp = () => {
-    setIsDown(false);
+    const mouseUp = () => {
+        setIsDown(false);
 
-    slider.classList.remove('active');
-  };
+        slider.classList.remove('active');
+    };
 
-  const mouseMove = (e) => {
-    if (!isDown) return;
-    const x = e.pageX - slider.offsetLeft;
-    const walk = (x - startX) * 3; //scroll-fast
-    slider.scrollLeft = scrollLeft - walk;
-  };
+    const mouseMove = (e) => {
+        if (!isDown) return;
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 3; //scroll-fast
+        slider.scrollLeft = scrollLeft - walk;
+    };
 
-  return (
-    <Container>
-      <Subject>najnowsze projekty</Subject>
-      <InnerContainer
-        ref={(el) => (slider = el)}
-        onMouseDown={mouseDown}
-        onMouseLeave={mouseLeave}
-        onMouseUp={mouseUp}
-        onMouseMove={mouseMove}>
-        <NewestProjectsElements items={Portfolio} />
-      </InnerContainer>
-    </Container>
-  );
+    return (
+        <Container>
+            <Subject>najnowsze projekty</Subject>
+            <InnerContainer
+                ref={(el) => (slider = el)}
+                onMouseDown={mouseDown}
+                onMouseLeave={mouseLeave}
+                onMouseUp={mouseUp}
+                onMouseMove={mouseMove}>
+                <NewestProjectsElements items={Portfolio}/>
+            </InnerContainer>
+        </Container>
+    );
 };
 
 export default NewestProjects;

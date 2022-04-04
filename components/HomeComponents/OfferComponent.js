@@ -1,13 +1,13 @@
 /** @format */
-import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import OfferItems from './OfferItems';
-import { data } from '../../data/offer';
+import {data} from '../../data/offer';
 
 const Container = styled.div`
   width: 100%;
   height: auto;
   margin: 100px 0;
+  scroll-margin-block-start: 125px;
 `;
 
 const TextContainer = styled.div`
@@ -96,25 +96,25 @@ const InnerOfferContainer = styled.div`
 `;
 
 const OfferComponent = () => {
-  return (
-    <Container>
-      <TextContainer>
-        <Subject>Oferta</Subject>
-        <Paragraph>
-          Współpracujemy z małymi i dużymi firmami oraz instytucjami w Polsce.
-          Dystans nie stanowi dla nas żadnej przeszkody!
-          <br />
-          <br />
-          Zobacz co możemy dla Ciebie wykonać...
-        </Paragraph>
-      </TextContainer>
-      <OfferContainer>
-        <InnerOfferContainer>
-          <OfferItems items={data.offer} />
-        </InnerOfferContainer>
-      </OfferContainer>
-    </Container>
-  );
+    return (
+        <Container id='offer'>
+            <TextContainer>
+                <Subject>Oferta</Subject>
+                <Paragraph>
+                    Współpracujemy z małymi i dużymi firmami oraz instytucjami w Polsce.
+                    Dystans nie stanowi dla nas żadnej przeszkody!
+                    <br/>
+                    <br/>
+                    Zobacz co możemy dla Ciebie wykonać...
+                </Paragraph>
+            </TextContainer>
+            <OfferContainer>
+                <InnerOfferContainer>
+                    <OfferItems items={data.offer}/>
+                </InnerOfferContainer>
+            </OfferContainer>
+        </Container>
+    );
 };
 
 export default OfferComponent;
