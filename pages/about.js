@@ -4,6 +4,7 @@ import Image from 'next/image';
 import {MoveOne} from '../utils/animations';
 import {CustomerPOV} from '../data/offer';
 import TeamComponent from '../components/AboutComponents/teamComponent';
+import Link from "next/link";
 
 const Container = styled.div`
   width: 100%;
@@ -263,10 +264,12 @@ const About = () => {
                         <span> Wszystko po to, by wyróżnić Twoją markę na tle innych.</span>
                     </Paragraph>
                 </InnerContainer>
-                <ButtonStyled>
-                    Niezobowiązująca wycena
-                    <br/> twojego projektu
-                </ButtonStyled>
+                <Link href='/pricing'>
+                    <ButtonStyled>
+                        Niezobowiązująca wycena
+                        <br/> twojego projektu
+                    </ButtonStyled>
+                </Link>
                 <ImageDivFirst>
                     <Image src="/GRADIENTS/1.png" width="2000" height="2000"/>
                 </ImageDivFirst>

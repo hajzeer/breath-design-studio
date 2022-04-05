@@ -1,4 +1,5 @@
 import {useRef} from "react";
+import {useRouter} from "next/router";
 import styled from "styled-components";
 import Layout from "../layout/layout";
 
@@ -12,13 +13,16 @@ const Container = styled.div`
 `
 
 const FormStyled = styled.form`
-  width: 90%;
+  width: 80%;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
+  @media (min-width: 1024px) {
+    width: 50%;
+  }
 `
 
 const TextAreaStyled = styled.textarea`
@@ -99,6 +103,8 @@ const Pricing = () => {
     let email = useRef(null)
     let message = useRef(null)
 
+    const router = useRouter()
+
     const sendMail = (e) => {
         e.preventDefault()
 
@@ -121,16 +127,11 @@ const Pricing = () => {
             },
             body: JSON.stringify(data)
         }).then((res) => {
-            console.log('Response received')
-            if (res.status === 200) {
-                console.log('Response succeeded!')
-                name.value = ''
-                email.value = ''
-                message.value = ''
-            }
+            console.log('SUCCESS!', response.status, response.text);
+        }, error => {
+            console.log('FAILED...', error);
         })
-
-        console.log(data)
+        router.reload()
     }
     return (
         <Layout>
@@ -138,9 +139,9 @@ const Pricing = () => {
                 <FormStyled onSubmit={sendMail}>
                     <InputStyled type="hidden" name="contact__number"/>
                     <LabelStyled>Imię i nazwisko</LabelStyled>
-                    <InputStyled ref={el => (name = el)} type="text" name="user__name"/>
+                    <InputStyled ref={el => (name = el)} type="text" name="name"/>
                     <LabelStyled>Email</LabelStyled>
-                    <InputStyled ref={el => (email = el)} type="email" name="user__email"/>
+                    <InputStyled ref={el => (email = el)} type="email" name="email"/>
                     <LabelStyled>Powiedz nam na czym Ci zależy</LabelStyled>
                     <TextAreaStyled ref={el => (message = el)} type="text" name="message"/>
                     <ButtonInput type='submit'/>
