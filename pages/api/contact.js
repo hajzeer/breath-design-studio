@@ -5,15 +5,15 @@ export default function (req, res) {
         port: 465,
         host: "smtp.gmail.com",
         auth: {
-            user: process.env.MAIL,
-            pass: process.env.PASS,
+            user: process.env.PUBLIC_NEXT_MAIL,
+            pass: process.env.PUBLIC_NEXT_PASS,
         },
         secure: true,
     });
 
     const mailData = {
-        from: process.env.MAIL,
-        to: process.env.MAILTO,
+        from: process.env.PUBLIC_NEXT_MAIL,
+        to: process.env.PUBLIC_NEXT_MAILTO,
         subject: `Prośba o wycenę od ${req.body.name} (${req.body.email})`,
         text: req.body.message,
     }
