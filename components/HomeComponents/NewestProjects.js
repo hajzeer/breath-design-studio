@@ -51,7 +51,7 @@ const InnerContainer = styled.div`
   }
 
   @media (min-width: 1024px) {
-    height: 500px;
+    height: 400px;
 
   }
 `;
@@ -79,31 +79,34 @@ const NewestProjects = () => {
     let slider = useRef();
 
     const mouseDown = (e) => {
-        slider.classList.add('active');
-        setIsDown(true);
-        let start = e.pageX - slider.offsetLeft;
-        setStartX(start);
-        let left = slider.scrollLeft;
-        setScrollLeft(left);
+        if (window.innerWidth >= 1024) {
+            slider.classList.add('active');
+            setIsDown(true);
+            let start = e.pageX - slider.offsetLeft;
+            setStartX(start);
+            let left = slider.scrollLeft;
+            setScrollLeft(left);
+        }
     };
 
     const mouseLeave = () => {
-        setIsDown(false);
-
         slider.classList.remove('active');
     };
 
     const mouseUp = () => {
         setIsDown(false);
-
         slider.classList.remove('active');
+
     };
 
     const mouseMove = (e) => {
-        if (!isDown) return;
-        const x = e.pageX - slider.offsetLeft;
-        const walk = (x - startX) * 3; //scroll-fast
-        slider.scrollLeft = scrollLeft - walk;
+        if (window.innerWidth >= 1024) {
+            if (!isDown) return;
+            const x = e.pageX - slider.offsetLeft;
+            const walk = (x - startX) * 2; //scroll-fast
+            slider.scrollLeft = scrollLeft - walk;
+        }
+
     };
 
     return (
@@ -114,7 +117,8 @@ const NewestProjects = () => {
                 onMouseDown={mouseDown}
                 onMouseLeave={mouseLeave}
                 onMouseUp={mouseUp}
-                onMouseMove={mouseMove}>
+                onMouseMove={mouseMove}
+            >
                 <NewestProjectsElements items={Portfolio}/>
             </InnerContainer>
         </Container>

@@ -10,8 +10,8 @@ const Container = styled.div`
   cursor: pointer;
 
   @media (min-width: 1024px) {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
 
   }
 `;
@@ -23,8 +23,8 @@ const ImageContainer = styled.div`
   z-index: -1;
 
   @media (min-width: 1024px) {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
 
   }
 `;
