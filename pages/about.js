@@ -271,7 +271,7 @@ const About = () => {
                     </ButtonStyled>
                 </Link>
                 <ImageDivFirst>
-                    <Image src="/GRADIENTS/1.png" width="2000" height="2000"/>
+                    <Image src="/GRADIENTS/1.png" width="2000" height="2000" priority/>
                 </ImageDivFirst>
                 <SecondSubject>skupiamy uwagę na twojej marce</SecondSubject>
                 <Paragraph short>

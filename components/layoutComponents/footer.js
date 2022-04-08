@@ -145,7 +145,7 @@ const Footer = () => {
     return (
         <Container id="contact">
             <ImageDiv>
-                <Image src="/GRADIENTS/7.png" width="2000" height="2000"/>
+                <Image src="/GRADIENTS/7.png" width="1000" height="1000"/>
             </ImageDiv>
             <TextContainer>
                 <Subject>

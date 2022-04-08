@@ -182,10 +182,10 @@ export default function Home() {
                         <Subject>SZUKASZ WYJĄTKOWEGO PROJEKTU?</Subject>
                     </TextContainer>
                     <ImageDivFirst>
-                        <Image src="/GRADIENTS/5.png" width="2000" height="2000"/>
+                        <Image src="/GRADIENTS/5.png" width="700" height="700" priority/>
                     </ImageDivFirst>
                     <ImageDivSecond>
-                        <Image src="/GRADIENTS/6.png" width="2000" height="2000" priority/>
+                        <Image src="/GRADIENTS/6.png" width="550" height="550" priority/>
                     </ImageDivSecond>
                     <SecondParahraph>
                         Nie wiesz jak nadać charakter swojej marce? A może masz w głowie

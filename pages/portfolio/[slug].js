@@ -22,12 +22,26 @@ const ImageContainer = styled.div`
 
 `
 
+const Loading = styled.h2`
+  width: 300px;
+  color: #ffffff;
+  font-weight: 500;
+  position: absolute;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  left: 50%;
+  margin-left: -150px;
+  top: 350px;
+  text-align: center;
+`
+
 const ProjectsPage = ({items}) => {
 
 
     return (
         <Layout>
             <Container>
+                <Loading>Loading</Loading>
                 <ImageContainer>
                     <Image src={items.visual} width={1200} height={6000} quality={100} priority/>
                 </ImageContainer>

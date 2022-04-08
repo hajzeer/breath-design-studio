@@ -73,7 +73,7 @@ const NewestProjectsElements = ({items}) => {
                                 <Paragraph>{item.name}</Paragraph>
                             </DivHelper>
                             <ImageContainer>
-                                <Image src={item.image} width={1000} height={1000} priority/>
+                                <Image src={item.image} width={400} height={400} priority/>
                             </ImageContainer>
                         </Container>
                     </Link>

@@ -91,10 +91,10 @@ const WelcomeComponents = () => {
     return (
         <Container>
             <ImageDivFirst>
-                <Image src="/GRADIENTS/1.png" width="2000" height="2000"/>
+                <Image src="/GRADIENTS/1.png" width="2000" height="2000" priority/>
             </ImageDivFirst>
             <ImageDivSecond>
-                <Image src="/GRADIENTS/2.png" width="2000" height="2000"/>
+                <Image src="/GRADIENTS/2.png" width="1200" height="1200" priority/>
             </ImageDivSecond>
             <InnerContainer>
                 <TextContainer>
