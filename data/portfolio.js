@@ -51,14 +51,14 @@ export const Portfolio = [
     {
         id: 7,
         name: 'stacja pistacja',
-        image: '/portfolio/logo/stacja_pistacja.jpg',
+        image: '/portfolio/logo/stacja_pistacja.jpeg',
         visual: '/portfolio/wiz/stacja_pistacja_wiz-min.png',
         slug: 'stacja-pistacja',
     },
     {
         id: 8,
         name: 'restauracja lava',
-        image: '/portfolio/logo/lava.jpg',
+        image: '/portfolio/logo/lava.jpeg',
         visual: '/portfolio/wiz/lava_wiz-min.png',
         slug: 'restauracja-lava',
     },
