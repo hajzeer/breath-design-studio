@@ -153,7 +153,7 @@ const TeamList = ({items}) => {
                     <Container key={item.id}>
                         <ContentDiv>
                             <ImageDiv>
-                                <Image src={item.image} width={500} height={500}/>
+                                <Image src={item.image} width={500} height={500} loading='lazy'/>
                             </ImageDiv>
                             <TextContainer>
                                 <Subject>{item.name}</Subject>

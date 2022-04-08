@@ -43,7 +43,7 @@ const ProjectsPage = ({items}) => {
             <Container>
                 <Loading>Loading</Loading>
                 <ImageContainer>
-                    <Image src={items.visual} width={1200} height={6000} quality={100} priority/>
+                    <Image src={items.visual} width={1200} height={6000} quality={100} loading='lazy'/>
                 </ImageContainer>
             </Container>
         </Layout>

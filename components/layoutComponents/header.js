@@ -149,6 +149,7 @@ const Header = () => {
                         width="300"
                         height="300"
                         layout="responsive"
+                        loading='lazy'
                     />
                 </ImageContainer>
             </Link>
