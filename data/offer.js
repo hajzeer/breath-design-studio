@@ -124,15 +124,6 @@ export const People = [
     },
     {
         id: 3,
-        name: 'tomek kozuba',
-        title: 'producent filmowy',
-        description: `Zajmuję się produkcją filmów skierowanych głównie na platformy social media oraz YouTube. Tworzę w przekonaniu, że historie, które opowiadam mają zawierać w sobie nie tylko walory estetyczne oraz jakość wykonania, ale przede wszystkim wartość sprzedażową i komunikacyjną marki. Ta fuzja daje najlepsze rezultaty. I mam na to dowody!
-    `,
-        image: '/zdj/14.png',
-        active: true,
-    },
-    {
-        id: 4,
         name: 'SALOMEA BARTOL',
         title: 'GRAPHIC DESIGNER',
         description: `Cześć! 
@@ -142,7 +133,7 @@ export const People = [
         active: true,
     },
     {
-        id: 5,
+        id: 4,
         name: 'ALEKSANDER GOLIS',
         title: 'prawnik',
         description: `Cześć, jestem prawnikiem z krwi i kości, doktorantem na Uniwersytecie Śląskim i wielkim fanem prawa cywilnego, energetycznego i ochrony środowiska oraz przyrody. W ramach swoich działań w Breath Design Studio realizuję nadzór nad procesami prawnotwórczymi z zakresu praw autorskich oraz szeroko pojętego prawa cywilnego w tym postępowań sprzedażowych, regulaminów sklepów internetowych, regulacji działalności stron internetowych oraz wszelkich kwestii podatkowych, finansowych obsługując również zakres prawa spółek handlowych.

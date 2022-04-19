@@ -54,7 +54,11 @@ const Layout = ({children}) => {
     return (
         <>
             <GlobalStyle/>
-            <Head></Head>
+            <Head>
+                <meta name="p:domain_verify" content="f688d0146eb74eedee9418c063e4f9d7"/>
+                <title>Breath Design Studio</title>
+                <link rel='icon' type="image/png" href='../public/logo/8.png'/>
+            </Head>
             <section>
                 <Header/>
                 {children}
