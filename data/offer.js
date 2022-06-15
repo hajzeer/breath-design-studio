@@ -141,4 +141,12 @@ export const People = [
         image: '/zdj/23.png',
         active: true,
     },
+    {
+        id: 5,
+        name: 'KINGA OBUCHOWSKA',
+        title: 'GRAPHIC DESIGNER',
+        description: `Cześć! Jestem studentką na kierunku Grafika Komputerowa. Specjalizuje się w digital paintingu i wszelkiego typu ilustracjach, ale nie straszne mi logotypy, projektowanie nadruków, okładek, wizytówek jak i plakatów. Od najmłodszych lat moja kreatywność wylewała się na papier i płótna, a w późniejszych latach na ekran tabletu graficznego. Ciągle rozwijam swoje umiejętności i poszerzam swoje horyzonty, uwielbiam zdobywać wiedzę o sztuce i wyciągnę z rękawa 120% chęci na naukę nowych rzeczy. `,
+        image: '/zdj/31.png',
+        active: true,
+    },
 ];

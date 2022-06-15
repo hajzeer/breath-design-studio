@@ -62,4 +62,11 @@ export const Portfolio = [
         visual: '/portfolio/wiz/lava_wiz-min.png',
         slug: 'restauracja-lava',
     },
+    {
+        id: 9,
+        name: 'magali skin',
+        image: '/portfolio/logo/Magali_Skin.png',
+        visual: '/portfolio/wiz/magali-skin-wiz.png',
+        slug: 'magali-skin',
+    },
 ];
